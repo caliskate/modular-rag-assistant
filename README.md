@@ -12,6 +12,8 @@ RAG-based, vector storage, corpus embedding, prompt/retrieval/response AI assist
 
 Detailed explanation of what the project does and why it's useful.
 
+```
+
 project-name/
 │
 ├── README.md                 # Essential project information
@@ -31,7 +33,7 @@ project-name/
 └── models/                   # Saved model files (often gitignored)
     └── .gitkeep              # Placeholder to track empty directory
 
-
+```
 
 ## Installation
 
