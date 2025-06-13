@@ -60,7 +60,7 @@ modular-rag-assistant/
 
 ## Usage
 
-### Task 1
+### Modular prompt chat assistant
 
 - **`main.py`**
 
