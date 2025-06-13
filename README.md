@@ -8,26 +8,26 @@ RAG-based, vector storage, corpus embedding, prompt/retrieval/response AI assist
 Detailed explanation of what the project does and why it's useful.
 
 ```
-
-project-name/
-│
-├── README.md                 # Essential project information
-├── LICENSE                   # Appropriate license file
-├── requirements.txt          # Project dependencies
-├── .gitignore                # Configured for Python/Jupyter
-│
-├── notebooks/                # Organized notebooks
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_preprocessing.ipynb
-│   └── 03_model_training.ipynb
-│
-├── data/                     # Data directory (often gitignored)
-│   ├── .gitkeep              # Placeholder to track empty directory
-│   └── README.md             # Data acquisition instructions
-│
-└── models/                   # Saved model files (often gitignored)
-    └── .gitkeep              # Placeholder to track empty directory
-
+my-rag-pipeline/
+├── .env                 # Stores sensitive environment variables (e.g., API keys). Not committed to Git.
+├── .env.example         # Provides a template for the .env file, showing required variables. Committed to Git.
+├── .gitignore           # Specifies intentionally untracked files that Git should ignore.
+├── config/
+│   ├── config.yaml          # Main application configuration, including reasoning strategies.
+│   └── prompt_config.yaml   # Specific configurations for prompt examples, potentially overriding or extending main prompts.
+├── data/
+│   └── documents/       # Contains all publication documents for RAG.
+│       ├── financial_report_q1_2024.md
+│       ├── tech_whitepaper_ai.pdf
+│       └── medical_journal_article.txt
+├── models/              # Directory to store any local machine learning models (e.g., fine-tuned LLMs, topic classifiers).
+│   └── .gitkeep         # A placeholder file to ensure Git tracks this empty directory.
+├── prompts.py           # Defines all modular prompt components (system, user, topic-specific elements).
+├── embedding_utils.py   # Handles text splitting, embedding generation, and vector database operations.
+├── llm_service.py       # Manages interactions with the Language Model API for text generation.
+├── main.py              # The primary script that orchestrates the entire RAG pipeline.
+├── requirements.txt     # Lists all Python dependencies required for the project.
+└── README.md            # Provides a general overview, setup instructions, and usage guidelines for the project.
 ```
 
 ## Installation
