@@ -62,7 +62,7 @@ modular-rag-assistant/
 
 ### Modular prompt chat assistant
 
-- **`main.py`**
+- **`code\main.py`**
 
   - Interact with chat assistant to research AI publications about football, neuroscience and sign language.
 
