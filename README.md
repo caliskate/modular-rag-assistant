@@ -62,13 +62,11 @@ modular-rag-assistant/
 
 ### Task 1
 
-- **`name of file .py`**
+- **`main.py`**
 
-  - Short description and purpose
+  - Interact with chat assistant to research AI publications about football, neuroscience and sign language.
 
-- **`name of file2.py`**
 
-  - Short description and purpose.
 
 
 
