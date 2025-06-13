@@ -9,22 +9,23 @@ RAG-based, vector storage, corpus embedding, prompt/retrieval/response AI assist
 modular-rag-assistant/
 ├── .env                 # Stores sensitive environment variables (e.g., API keys). Not committed to Git.
 ├── .env.example         # Provides a template for the .env file, showing required variables. Committed to Git.
-├── .gitignore           # Specifies intentionally untracked files that Git should ignore.
-├── config/
-│   ├── config.yaml          # Main application configuration, including reasoning strategies.
-│   └── prompt_config.yaml   # Specific configurations for prompt examples, potentially overriding or extending main prompts.
-├── data/
-│   └── documents/       # Contains all publication documents for RAG.
+├── .gitignore           # Specifies intentionally untracked files and directories that Git should ignore.
+├── code/                # Contains all Python source code for the application.
+│   ├── config/          # Configuration files for the application.
+│   │   ├── config.yaml          # Main application configuration, including high-level settings and reasoning strategies.
+│   │   └── prompt_config.yaml   # Specific configurations for prompt examples or reusable prompt components.
+│   ├── embedding_utils.py   # Handles text splitting, embedding generation, and interactions with vector databases.
+│   ├── llm_service.py       # Manages communication with the Language Model API for text generation.
+│   ├── main.py              # The primary script that orchestrates the entire RAG pipeline.
+│   └── prompts.py           # Defines the logic for constructing and formatting modular prompts.
+├── data/                # Directory for raw or processed data files.
+│   └── documents/       # Contains all publication documents that will be used for retrieval.
 │       ├── financial_report_q1_2024.md
 │       ├── tech_whitepaper_ai.pdf
 │       └── medical_journal_article.txt
-├── models/              # Directory to store any local machine learning models (e.g., fine-tuned LLMs, topic classifiers).
-│   └── .gitkeep         # A placeholder file to ensure Git tracks this empty directory.
-├── prompts.py           # Defines all modular prompt components (system, user, topic-specific elements).
-├── embedding_utils.py   # Handles text splitting, embedding generation, and vector database operations.
-├── llm_service.py       # Manages interactions with the Language Model API for text generation.
-├── main.py              # The primary script that orchestrates the entire RAG pipeline.
-├── requirements.txt     # Lists all Python dependencies required for the project.
+├── models/              # Directory to store any local machine learning models (e.g., for topic classification or re-ranking).
+│   └── .gitkeep         # A placeholder file to ensure this directory is tracked by Git, even when empty.
+├── requirements.txt     # Lists all Python package dependencies required to run the project.
 └── README.md            # Provides a general overview, setup instructions, and usage guidelines for the project.
 ```
 
