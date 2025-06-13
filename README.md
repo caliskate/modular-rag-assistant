@@ -19,10 +19,6 @@ modular-rag-assistant/
 │   ├── main.py            # The primary script that orchestrates the entire RAG pipeline.
 │   └── prompts.py         # Defines the logic for constructing and formatting modular prompts.
 ├── data/                  # Directory for raw or processed data files.
-│   └── documents/         # Contains all publication documents that will be used for retrieval.
-│       ├── financial_report_q1_2024.md
-│       ├── tech_whitepaper_ai.pdf
-│       └── medical_journal_article.txt
 ├── models/                # Directory to store any local machine learning models (e.g., for topic classification or re-ranking).
 │   └── .gitkeep           # A placeholder file to ensure this directory is tracked by Git, even when empty.
 ├── output/                # Main output folder for generated files and persistent data.
