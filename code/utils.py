@@ -9,9 +9,8 @@ import chromadb
 import shutil
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from code.config.paths import VECTOR_DB_DIR # Import the VECTOR_DB_DIR constant
+from paths import VECTOR_DB_DIR # Import the VECTOR_DB_DIR constant
 from paths import DATA_DIR
-
 
 def load_publication(publication_external_id="yzN0OCQT7hUS"):
     """Loads the publication markdown file.
@@ -38,15 +37,12 @@ def load_publication(publication_external_id="yzN0OCQT7hUS"):
 
 
 def load_all_publications(publication_dir: str = DATA_DIR) -> list[str]:
-    """Loads all the publication markdown files in the given directory.
-
-    Returns:
-        List of publication contents.
-    """
     publications = []
     for pub_id in os.listdir(publication_dir):
         if pub_id.endswith(".md"):
-            publications.append(load_publication(pub_id.replace(".md", "")))
+            pub_path = os.path.join(publication_dir, pub_id)
+            with open(pub_path, "r", encoding="utf-8") as f:
+                publications.append(f.read())
     return publications
 
 
@@ -246,31 +242,25 @@ def insert_publications(collection: chromadb.Collection, publications: list[str]
         )
         next_id += len(chunked_publication) # Update next_id for the next publication
 
-from code.embedding_utils import initialize_db, insert_publications # Import functions from embedding_utils
-from code.utils import load_all_publications # Import the data loading utility
-from code.config.paths import VECTOR_DB_DIR # Import the path constant
-
-def main():
+def select_prompt_by_similarity(query: str, topic_prompts: dict) -> dict:
     """
-    Main function to initialize the database, load publications,
-    and insert them into the ChromaDB collection.
+    Selects the most relevant prompt based on query similarity to topic names.
+    
+    Args:
+        query (str): The user's input query.
+        topic_prompts (dict): Dictionary with topic names as keys and prompts as values.
+    
+    Returns:
+        dict: The prompt corresponding to the most relevant topic.
     """
-    # Initialize the ChromaDB collection, deleting existing data if specified
-    collection = initialize_db(
-        persist_directory=VECTOR_DB_DIR,
-        collection_name="publications",
-        delete_existing=True, # Set to True to re-create the DB each run for fresh data
-    )
+    model = SentenceTransformer("all-MiniLM-L6-v2")
     
-    # Load all publications from the data directory
-    publications = load_all_publications()
-    
-    # Insert the loaded publications (and their chunks/embeddings) into the database
-    insert_publications(collection, publications)
+    topic_names = list(topic_prompts.keys())
+    topic_embeddings = model.encode(topic_names, convert_to_tensor=True)
+    query_embedding = model.encode(query, convert_to_tensor=True)
 
-    # Print the total number of documents (chunks) in the collection
-    print(f"Total documents (chunks) in collection: {collection.count()}")
+    similarity_scores = util.pytorch_cos_sim(query_embedding, topic_embeddings)[0]
+    best_match_idx = similarity_scores.argmax().item()
 
-if __name__ == "__main__":
-    # This block ensures that main() is called only when the script is executed directly
-    main()
+    best_topic = topic_names[best_match_idx]
+    return topic_prompts[best_topic]
