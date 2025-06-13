@@ -5,29 +5,29 @@ RAG-based, vector storage, corpus embedding, prompt/retrieval/response AI assist
 
 ## Overview
 
-Detailed explanation of what the project does and why it's useful.
-
 ```
-
-project-name/
-│
-├── README.md                 # Essential project information
-├── LICENSE                   # Appropriate license file
-├── requirements.txt          # Project dependencies
-├── .gitignore                # Configured for Python/Jupyter
-│
-├── notebooks/                # Organized notebooks
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_preprocessing.ipynb
-│   └── 03_model_training.ipynb
-│
-├── data/                     # Data directory (often gitignored)
-│   ├── .gitkeep              # Placeholder to track empty directory
-│   └── README.md             # Data acquisition instructions
-│
-└── models/                   # Saved model files (often gitignored)
-    └── .gitkeep              # Placeholder to track empty directory
-
+modular-rag-assistant/
+├── .env                   # Stores sensitive environment variables (e.g., API keys). Not committed to Git.
+├── .env.example           # Provides a template for the .env file, showing required variables. Committed to Git.
+├── .gitignore             # Specifies intentionally untracked files and directories that Git should ignore.
+├── paths.py               # Defines important directory and file paths for the project.
+├── code/                  # Contains all Python source code for the application.
+│   ├── config/            # Configuration files for the application.
+│   │   ├── config.yaml          # Main application configuration, including high-level settings and reasoning strategies.
+│   │   └── prompt_config.yaml   # Specific configurations for prompt examples or reusable prompt components.
+│   ├── embedding_utils.py # Handles text splitting, embedding generation, and interactions with vector databases.
+│   ├── main.py            # The primary script that orchestrates the entire RAG pipeline.
+│   └── prompts.py         # Defines the logic for constructing and formatting modular prompts.
+├── data/                  # Directory for raw or processed data files.
+│   ├── football_analytics.md  # Data file for football analytics
+│   ├── neuro_persona.md       # Data file for neuro persona research
+│   └── sign_language_recognition.md # Data file for sign language recognition
+├── models/                # Directory to store any local machine learning models (e.g., for topic classification or re-ranking).
+│   └── .gitkeep           # A placeholder file to ensure this directory is tracked by Git, even when empty.
+├── output/                # Main output folder for generated files and persistent data.
+│   └── vector_db/         # Subfolder to store the local vector database index and associated data.
+├── requirements.txt       # Lists all Python package dependencies required to run the project.
+└── README.md              # Provides a general overview, setup instructions, and usage guidelines for the project.
 ```
 
 ## Installation
