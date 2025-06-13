@@ -6,7 +6,7 @@ RAG-based, vector storage, corpus embedding, prompt/retrieval/response AI assist
 ## Overview
 
 ```
-my-rag-pipeline/
+modular-rag-assistant/
 ├── .env                 # Stores sensitive environment variables (e.g., API keys). Not committed to Git.
 ├── .env.example         # Provides a template for the .env file, showing required variables. Committed to Git.
 ├── .gitignore           # Specifies intentionally untracked files that Git should ignore.
