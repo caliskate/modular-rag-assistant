@@ -1,0 +1,9 @@
+DEFAULT_LLM_MODEL_NAME = "llama-3.1-8b-instant"
+EMBEDDING_MODEL_NAME = "text-embedding-004"
+DEFAULT_CHUNK_SIZE = 1000 (for text splitting before embedding)
+CHUNK_OVERLAP = 100
+VECTOR_DB_PATH = "vector_store/" (if using a local vector store)
+MAX_CONTEXT_TOKENS = 4000
+LOG_LEVEL = "INFO"
+DEFAULT_PROMPT_VERSION = "v1.0" (if you have multiple prompt versions in prompts.py)
+TOP_K_RETRIEVAL = 5
