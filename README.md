@@ -19,6 +19,9 @@ modular-rag-assistant/
 │   ├── main.py            # The primary script that orchestrates the entire RAG pipeline.
 │   └── prompts.py         # Defines the logic for constructing and formatting modular prompts.
 ├── data/                  # Directory for raw or processed data files.
+│   ├── football_analytics.md  # Data file for football analytics
+│   ├── neuro_persona.md       # Data file for neuro persona research
+│   └── sign_language_recognition.md # Data file for sign language recognition
 ├── models/                # Directory to store any local machine learning models (e.g., for topic classification or re-ranking).
 │   └── .gitkeep           # A placeholder file to ensure this directory is tracked by Git, even when empty.
 ├── output/                # Main output folder for generated files and persistent data.
