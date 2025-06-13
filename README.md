@@ -73,7 +73,4 @@ modular-rag-assistant/
 
 ## License
 
-Information about the project's license.
-
-• License Guide: A primer on licenses for ML projects https://app.readytensor.ai/publications/qWBpwY20fqSz
-Choose a License: Help picking an open source license  https://choosealicense.com/
+MIT open source
