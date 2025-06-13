@@ -5,8 +5,6 @@ RAG-based, vector storage, corpus embedding, prompt/retrieval/response AI assist
 
 ## Overview
 
-Detailed explanation of what the project does and why it's useful.
-
 ```
 my-rag-pipeline/
 ├── .env                 # Stores sensitive environment variables (e.g., API keys). Not committed to Git.
