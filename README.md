@@ -42,7 +42,7 @@ project-name/
 
    ```bash
    git clone https://github.com/caliskate/modular-RAG-assistant.git
-   cd rt-modular-RAG-assistant
+   cd modular-RAG-assistant
    ```
 
 2. **Install dependencies:**
