@@ -10,6 +10,7 @@ modular-rag-assistant/
 ├── .env                   # Stores sensitive environment variables (e.g., API keys). Not committed to Git.
 ├── .env.example           # Provides a template for the .env file, showing required variables. Committed to Git.
 ├── .gitignore             # Specifies intentionally untracked files and directories that Git should ignore.
+├── paths.py               # Defines important directory and file paths for the project.
 ├── code/                  # Contains all Python source code for the application.
 │   ├── config/            # Configuration files for the application.
 │   │   ├── config.yaml          # Main application configuration, including high-level settings and reasoning strategies.
