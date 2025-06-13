@@ -37,11 +37,46 @@ project-name/
 
 ## Installation
 
-Basic installation instructions.
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/caliskate/modular-RAG-assistant.git
+   cd rt-modular-RAG-assistant
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set up Groq API key:**
+
+   Create an `.env` file into root directory including your API key:
+
+   ```
+   GROQ_API_KEY=your-api-key-here
+   ```
+
+   You can get your API key from [Groq](https://console.groq.com/).
+
+
 
 ## Usage
 
-Simple examples of how to use the project.
+### Task 1
+
+- **`name of file .py`**
+
+  - Short description and purpose
+
+- **`name of file2.py`**
+
+  - Short description and purpose.
+
+
+
 
 ## License
 
