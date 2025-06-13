@@ -1,10 +1,5 @@
 
-
-# Project Name
-
-Brief description of the project.
-
-# modular-RAG-assistant
+# modular-rag-assistant
 RAG-based, vector storage, corpus embedding, prompt/retrieval/response AI assistant.
 <br>Ready Tensor Agentic AI Developer Certification - Module 1
 
@@ -41,8 +36,8 @@ project-name/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/caliskate/modular-RAG-assistant.git
-   cd modular-RAG-assistant
+   git clone https://github.com/caliskate/modular-rag-assistant.git
+   cd modular-rag-assistant
    ```
 
 2. **Install dependencies:**
