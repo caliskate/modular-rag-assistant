@@ -15,7 +15,6 @@ modular-rag-assistant/
 │   │   ├── config.yaml          # Main application configuration, including high-level settings and reasoning strategies.
 │   │   └── prompt_config.yaml   # Specific configurations for prompt examples or reusable prompt components.
 │   ├── embedding_utils.py # Handles text splitting, embedding generation, and interactions with vector databases.
-│   ├── llm_service.py     # Manages communication with the Language Model API for text generation.
 │   ├── main.py            # The primary script that orchestrates the entire RAG pipeline.
 │   └── prompts.py         # Defines the logic for constructing and formatting modular prompts.
 ├── data/                  # Directory for raw or processed data files.
