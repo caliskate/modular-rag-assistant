@@ -74,4 +74,4 @@ modular-rag-assistant/
 
 ## License
 
-MIT open source
+This project is licensed under the [MIT License](LICENSE).
