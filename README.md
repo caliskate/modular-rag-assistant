@@ -1,6 +1,6 @@
 
 # modular-rag-assistant
-RAG-based, vector storage, corpus embedding, prompt/retrieval/response AI assistant.
+RAG-based, vector storage, corpus embedding, prompt/retrieval/response AI assistant with modular prompt based on user query.
 <br>Ready Tensor Agentic AI Developer Certification - Module 1
 
 ## Overview
