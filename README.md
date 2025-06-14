@@ -15,7 +15,7 @@ modular-rag-assistant/
 │   ├── config/            # Configuration files for the application.
 │   │   ├── config.yaml          # Main application configuration, including high-level settings and reasoning strategies.
 │   │   └── prompt_config.yaml   # Specific configurations for prompt examples or reusable prompt components.
-│   ├── embedding_utils.py # Handles text splitting, embedding generation, and interactions with vector databases.
+│   ├── utils.py           # Handles text splitting, embedding generation, and interactions with vector databases.
 │   ├── llm_service.py     # Manages communication with the Language Model API, including retrieval and response generation.
 │   ├── main.py            # The primary script that orchestrates the entire RAG pipeline.
 │   └── prompts.py         # Defines the logic for constructing and formatting modular prompts.
@@ -23,8 +23,8 @@ modular-rag-assistant/
 │   ├── football_analytics.md  # Data file for football analytics
 │   ├── neuro_persona.md       # Data file for neuro persona research
 │   └── sign_language_recognition.md # Data file for sign language recognition
-├── models/                # Directory to store any local machine learning models (e.g., for topic classification or re-ranking).
-│   └── .gitkeep           # A placeholder file to ensure this directory is tracked by Git, even when empty.
+├── models/                # Directory to store any local machine learning models.
+│   └── .gitkeep           # Directory placeholder file for Git tracking.
 ├── output/                # Main output folder for generated files and persistent data.
 │   └── vector_db/         # Subfolder to store the local vector database index and associated data.
 ├── requirements.txt       # Lists all Python package dependencies required to run the project.
