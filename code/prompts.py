@@ -5,8 +5,6 @@ from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from utils import select_prompt_by_similarity
-# prompt logicfrom langchain_groq import ChatGroq
-from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 
 # Load environment variables
 load_dotenv() # loads file you must make called "database.env" which contains "GROQ_API_KEY="
