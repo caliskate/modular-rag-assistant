@@ -1,5 +1,9 @@
 # Initializes logger and ChromaDB
 # Defines retrieve_relevant_documents and respond_to_query
+import os
+# Avoid tokenizer and telemetry warnings
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+os.environ["CHROMA_TELEMETRY_ENABLED"] = "false"
 import logging
 import torch # For device selection in embeddings
 from langchain_groq import ChatGroq # LLM interaction

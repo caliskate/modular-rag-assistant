@@ -1,5 +1,5 @@
 DEFAULT_LLM_MODEL_NAME: "llama-3.1-8b-instant"
-LLM_TEMPERATURE: 0.3
+LLM_TEMPERATURE: 0.2
 EMBEDDING_MODEL_NAME: "text-embedding-004"
 DEFAULT_CHUNK_SIZE: 1000  # for text splitting before embedding
 CHUNK_OVERLAP: 100

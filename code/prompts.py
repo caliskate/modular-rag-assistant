@@ -27,30 +27,35 @@ llm = ChatGroq(
 def build_prompt_from_config(prompt_config: dict, input_data: str) -> list:
     messages = []
 
-    system_content = ""
+    # Support both modular and simple fallback format
+    if "system_message" in prompt_config:
+        system_content = prompt_config["system_message"]
+    else:
+        system_content = ""
 
-    if "description" in prompt_config:
-        if isinstance(prompt_config["description"], list):
-            system_content += "# " + " ".join(prompt_config["description"]) + "\n\n"
-        else:
-            system_content += "# " + prompt_config["description"] + "\n\n"
+        if "description" in prompt_config:
+            if isinstance(prompt_config["description"], list):
+                system_content += "# " + " ".join(prompt_config["description"]) + "\n\n"
+            else:
+                system_content += "# " + prompt_config["description"] + "\n\n"
 
-    system_content += prompt_config.get("role", "")
+        system_content += prompt_config.get("role", "")
 
-    if "personality" in prompt_config:
-        system_content += "\n\n" + prompt_config["personality"]
+        if "personality" in prompt_config:
+            system_content += "\n\n" + prompt_config["personality"]
 
-    if "style_or_tone" in prompt_config:
-        system_content += "\n\n" + "\n".join(prompt_config["style_or_tone"])
+        if "style_or_tone" in prompt_config:
+            system_content += "\n\n" + "\n".join(prompt_config["style_or_tone"])
 
-    if "output_constraints" in prompt_config:
-        system_content += "\n\n" + "\n".join(prompt_config["output_constraints"])
+        if "output_constraints" in prompt_config:
+            system_content += "\n\n" + "\n".join(prompt_config["output_constraints"])
 
-    if "output_format" in prompt_config:
-        system_content += "\n\n" + "\n".join(prompt_config["output_format"])
+        if "output_format" in prompt_config:
+            system_content += "\n\n" + "\n".join(prompt_config["output_format"])
 
     messages.append(SystemMessage(content=system_content))
 
+    # Add instruction + query
     if "instruction" in prompt_config:
         input_content = f"{prompt_config['instruction']}\n\n{input_data}"
     else:
@@ -59,4 +64,3 @@ def build_prompt_from_config(prompt_config: dict, input_data: str) -> list:
     messages.append(HumanMessage(content=input_content))
 
     return messages
-

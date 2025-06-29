@@ -10,7 +10,6 @@ import re
 from dotenv import load_dotenv
 from pathlib import Path
 from typing import Union, Optional
-from chromadb.config import Settings
 import glob
 import torch
 import chromadb
@@ -19,6 +18,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from paths import VECTOR_DB_DIR # Import the VECTOR_DB_DIR constant
 from paths import DATA_DIR
 from sentence_transformers import SentenceTransformer, util
+
 
 def load_publication(publication_external_id="yzN0OCQT7hUS"):
     """Loads the publication markdown file.
