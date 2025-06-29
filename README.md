@@ -49,7 +49,7 @@ modular-rag-assistant/
 
 3. **Set up Groq API key:**
 
-   Create an `.env` file into root directory including your API key:
+   Create an `.env` file into root directory and add your API key:
 
    ```
    GROQ_API_KEY=your-api-key-here
@@ -63,10 +63,10 @@ modular-rag-assistant/
 
 ### Modular prompt chat assistant
 
-- **`code\main.py`**
+- **`python code/main.py`**
 
-  - Interact with chat assistant to research AI publications about football, neuroscience and sign language.
-
+This launches the assistant in your terminal or command-line interface.
+You’ll be prompted to enter a question about football, neuroscience, or sign language AI research, or type config or exit.
 
 
 
