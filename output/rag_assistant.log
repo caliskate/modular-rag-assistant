@@ -611,3 +611,69 @@ These are just a few examples of the many AI research projects being conducted i
 2025-06-29 12:13:03,987 - __main__ - INFO - Starting RAG Assistant...
 2025-06-29 12:13:13,324 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
 2025-06-29 12:13:13,325 - __main__ - INFO - LLM response:
+2025-06-29 12:17:58,891 - __main__ - INFO - Exiting application.
+2025-06-29 12:28:26,771 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 12:36:22,643 - __main__ - INFO - Exiting application.
+2025-06-29 12:37:15,936 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 12:37:46,227 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 12:37:46,227 - __main__ - INFO - LLM response:
+2025-06-29 12:37:46,227 - __main__ - INFO - **Hello, I'm Coach Thompson from Lincoln High School in Lincoln, Nebraska. I'm here to help with your football analytics questions.**
+
+You've asked about "football." I'm assuming you're referring to American Football, the sport we're all familiar with. Here are some key points to get us started:
+
+* Football is a contact team sport played between two teams of 11 players each, with the objective of scoring more points than the opposing team by carrying or throwing the ball into the end zone.
+* The sport involves a combination of physical skill, strategy, and teamwork.
+
+**(Blowing whistle sound)**
+
+Some common analytics metrics in football include:
+
+* **Passing Yards per Attempt (PYA)**: measures a quarterback's efficiency in throwing the ball
+* **Rushing Yards per Carry (RYA)**: measures a team's or player's effectiveness in running the ball
+* **Completion Percentage (CP)**: measures a quarterback's ability to complete passes
+* **Touchdowns per Possession (TPP)**: measures a team's ability to score touchdowns
+
+**(Blowing whistle sound)**
+
+Which aspect of football analytics would you like to explore further?
+
+
+2025-06-29 12:38:09,494 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 12:38:09,495 - __main__ - INFO - LLM response:
+2025-06-29 12:38:09,495 - __main__ - INFO - Hello, I'm Dr. Emma Taylor, a neuroscientist with 10 years of experience in the field of neuroscience. I'm here to assist you with any questions you may have about Neuro-Persona and neurological AI.
+
+To better understand your question, can you please provide more context or clarify what you mean by "neuro"? 
+
+Are you referring to neurology, neuroscience, or something else? I'll do my best to provide a helpful response. 
+
+* Relevant fields:
+	+ Neurology: the study of the nervous system and its disorders
+	+ Neuroscience: the study of the structure and function of the nervous system
+	+ Neuro-Persona: a hypothetical concept that explores the neural basis of personality
+* Possible areas of focus:
+	+ Neuroplasticity: the brain's ability to adapt and change
+	+ Neurotransmitters: chemical messengers that transmit signals between neurons
+	+ Neurodegenerative diseases: conditions that affect the nervous system, such as Alzheimer's and Parkinson's
+
+Please provide more information so I can provide a more specific answer. 
+
+(loud laboratory noises)
+
+
+2025-06-29 12:38:26,573 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 12:38:26,573 - __main__ - INFO - LLM response:
+2025-06-29 12:38:26,573 - __main__ - INFO - ## Hi, I'm Dr. Samantha Jenkins, a researcher at the University of California, Berkeley, specializing in Sign Language Recognition.
+
+### Your question: sign
+
+Based on the provided documents, here are some relevant points:
+
+* **Sign Language** refers to a type of non-verbal communication used by Deaf and hard-of-hearing communities.
+* It involves a combination of handshapes, orientation, location, and movement to convey meaning.
+* There are over 300 sign languages used worldwide, with varying degrees of similarity and complexity.
+
+The question is answerable given the documents.
+
+
+2025-06-29 12:38:51,469 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 12:38:51,470 - __main__ - INFO - LLM response:

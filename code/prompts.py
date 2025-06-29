@@ -1,21 +1,26 @@
 # loads environment variables, initializes the LLM with Groq
 # Defines build_prompt_from_config
 import yaml
+from paths import APP_CONFIG_FPATH
 import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from utils import select_prompt_by_similarity
+import yaml
 
+# Load application configuration from YAML
+with open(APP_CONFIG_FPATH, "r", encoding="utf-8") as f:
+    app_config = yaml.safe_load(f)
 # Load environment variables
 load_dotenv() # loads file you must make called "database.env" which contains "GROQ_API_KEY="
 groq_api_key = os.getenv('GROQ_API_KEY')
 
-# Initialize the LLM with the Groq API key
+# Initialize the LLM with the Groq API key and yaml
 llm = ChatGroq(
-    model="llama-3.1-8b-instant",  # Fast and capable
-    temperature=0.7,
-    api_key= groq_api_key
+    model=app_config.get("DEFAULT_LLM_MODEL_NAME", "llama-3.1-8b-instant"),
+    temperature=app_config.get("LLM_TEMPERATURE", 0.3),
+    api_key=groq_api_key,
 )
 
 # "Defines the logic for constructing and formatting modular prompts."
