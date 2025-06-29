@@ -1,16 +1,15 @@
-groq
+python-dotenv==1.0.1
+PyYAML==6.0.1
 
-# Core libraries
-python-dotenv
-PyYAML
+groq==0.29.0
+langchain-groq==0.3.4
 
-# Vector DB and embedding models
-chromadb
-sentence-transformers
-torch
-langchain
-langchain-community
-langchain-huggingface
+chromadb==0.4.24
+sentence-transformers==2.7.0
+torch==2.3.1
 
-# Text processing
-langchain-text-splitters
+langchain-core==0.3.66
+langchain==0.3.26
+langchain-community==0.3.21
+langchain-huggingface==0.3.0
+langchain-text-splitters==0.3.8

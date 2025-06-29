@@ -11,6 +11,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from paths import VECTOR_DB_DIR # Import the VECTOR_DB_DIR constant
 from paths import DATA_DIR
+from sentence_transformers import SentenceTransformer, util
 
 def load_publication(publication_external_id="yzN0OCQT7hUS"):
     """Loads the publication markdown file.
@@ -128,62 +129,48 @@ def initialize_db(
 ) -> chromadb.Collection:
     """
     Initialize a ChromaDB instance and persist it to disk.
-
-    Args:
-        persist_directory (str): The directory where ChromaDB will persist data.
-                                 Defaults to "./vector_db"
-        collection_name (str): The name of the collection to create/get.
-                               Defaults to "publications"
-        delete_existing (bool): Whether to delete the existing database if it exists.
-                                Defaults to False
-    Returns:
-        chromadb.Collection: The ChromaDB collection instance
+    This function is good for explicitly managing the DB lifecycle (e.g., clearing).
     """
     if os.path.exists(persist_directory) and delete_existing:
+        print(f"Deleting existing ChromaDB at: {persist_directory}")
         shutil.rmtree(persist_directory)
 
     os.makedirs(persist_directory, exist_ok=True)
 
-    # Initialize ChromaDB client with persistent storage
     client = chromadb.PersistentClient(path=persist_directory)
 
-    # Create or get a collection
-    try:
-        # Try to get existing collection first
-        collection = client.get_collection(name=collection_name)
-        print(f"Retrieved existing collection: {collection_name}")
-    except Exception:
-        # If collection doesn't exist, create it - use cosine distance, lower distance is better
-        collection = client.create_collection(
-            name=collection_name,
-            metadata={
-                "hnsw:space": "cosine", # Use cosine distance for semantic search
-                "hnsw:batch_size": 10000,
-            },
-        )
-        print(f"Created new collection: {collection_name}")
-
-    print(f"ChromaDB initialized with persistent storage at: {persist_directory}")
+    # Use get_or_create_collection here for consistency and robustness
+    collection = client.get_or_create_collection(
+        name=collection_name,
+        metadata={
+            "hnsw:space": "cosine", # Use cosine distance for semantic search
+            "hnsw:batch_size": 10000,
+        },
+    )
+    print(f"ChromaDB collection '{collection_name}' initialized (get or created) at: {persist_directory}")
 
     return collection
+
 
 def get_db_collection(
     persist_directory: str = VECTOR_DB_DIR,
     collection_name: str = "publications",
 ) -> chromadb.Collection:
     """
-    Get a ChromaDB client instance.
-
-    Args:
-        persist_directory (str): The directory where ChromaDB persists data
-        collection_name (str): The name of the collection to get
-
-    Returns:
-        chromadb.PersistentClient: The ChromaDB client instance
+    Get a ChromaDB collection. If the collection does not exist, it creates it.
+    This function is intended for general access where existence is not guaranteed.
     """
-    return chromadb.PersistentClient(path=persist_directory).get_collection(
-        name=collection_name
+    client = chromadb.PersistentClient(path=persist_directory)
+    
+    # THIS IS THE KEY CHANGE: Use get_or_create_collection
+    collection = client.get_or_create_collection(
+        name=collection_name,
+        # You might want to pass metadata here if creating for the first time
+        # metadata={"hnsw:space": "cosine"} # Example: ensure consistent distance metric
     )
+    
+    print(f"ChromaDB: Successfully got or created collection '{collection_name}' in '{persist_directory}'")
+    return collection
 
 def chunk_publication(
     publication: str, chunk_size: int = 1000, chunk_overlap: int = 200
@@ -245,14 +232,10 @@ def insert_publications(collection: chromadb.Collection, publications: list[str]
 def select_prompt_by_similarity(query: str, topic_prompts: dict) -> dict:
     """
     Selects the most relevant prompt based on query similarity to topic names.
-    
-    Args:
-        query (str): The user's input query.
-        topic_prompts (dict): Dictionary with topic names as keys and prompts as values.
-    
-    Returns:
-        dict: The prompt corresponding to the most relevant topic.
     """
+    # These imports are needed if this function is in utils.py
+    # from sentence_transformers import SentenceTransformer, util # Make sure this is installed!
+    
     model = SentenceTransformer("all-MiniLM-L6-v2")
     
     topic_names = list(topic_prompts.keys())
