@@ -265,13 +265,11 @@ def insert_publications(collection: chromadb.Collection, publications: list[str]
 
 logger = logging.getLogger(__name__)
 
-def select_prompt_by_similarity(query: str, topic_prompts: dict) -> dict:
+def select_prompt_by_similarity(query: str, topic_prompts: dict, threshold: float = 0.5) -> dict:
     """
     Selects the most relevant prompt based on query similarity to topic names.
+    Returns a default prompt if similarity is too low.
     """
-    # These imports are needed if this function is in utils.py
-    # from sentence_transformers import SentenceTransformer, util # Make sure this is installed!
-    
     model = SentenceTransformer("all-MiniLM-L6-v2")
     
     topic_names = list(topic_prompts.keys())
@@ -280,6 +278,14 @@ def select_prompt_by_similarity(query: str, topic_prompts: dict) -> dict:
 
     similarity_scores = util.pytorch_cos_sim(query_embedding, topic_embeddings)[0]
     best_match_idx = similarity_scores.argmax().item()
+    best_score = similarity_scores[best_match_idx].item()
+
+    if best_score < threshold:
+        # Fallback generic assistant behavior   
+        return {
+            "system_message": "You are a helpful assistant. Answer clearly and concisely.",
+            "instruction": "Make sure the user is asking about football, neuroscience, or sign language AI research.",
+        }
 
     best_topic = topic_names[best_match_idx]
     return topic_prompts[best_topic]

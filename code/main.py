@@ -14,7 +14,7 @@ from paths import VECTOR_DB_DIR # Import the path constant
 from utils import select_prompt_by_similarity
 from llm_service import respond_to_query # For handling RAG responses
 from paths import APP_CONFIG_FPATH, PROMPT_CONFIG_FPATH, OUTPUTS_DIR # For path constants
-
+# Ensure stdout can handle UTF-8 characters
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # Get the main logger instance

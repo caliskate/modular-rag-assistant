@@ -49,9 +49,11 @@ def build_prompt_from_config(prompt_config: dict, input_data: str) -> list:
     messages.append(SystemMessage(content=system_content))
 
     if "instruction" in prompt_config:
-        messages.append(HumanMessage(content=prompt_config["instruction"]))
+        input_content = f"{prompt_config['instruction']}\n\n{input_data}"
+    else:
+        input_content = input_data
 
-    messages.append(HumanMessage(content=input_data))
+    messages.append(HumanMessage(content=input_content))
 
     return messages
 
