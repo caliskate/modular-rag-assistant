@@ -1,3 +1,5 @@
+# Defines load_publication, load_all_publications, load_yaml_config, load_env, save_text_to_file
+# Defines initialize_db, get_db_collection, chunk_publication, embed_documents, insert_publications
 import os
 import yaml
 import logging
@@ -10,7 +12,6 @@ import torch
 import chromadb
 import shutil
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 from paths import VECTOR_DB_DIR # Import the VECTOR_DB_DIR constant
 from paths import DATA_DIR
 from sentence_transformers import SentenceTransformer, util
@@ -164,11 +165,9 @@ def get_db_collection(
     """
     client = chromadb.PersistentClient(path=persist_directory)
     
-    # THIS IS THE KEY CHANGE: Use get_or_create_collection
+    # Use get_or_create_collection
     collection = client.get_or_create_collection(
         name=collection_name,
-        # You might want to pass metadata here if creating for the first time
-        # metadata={"hnsw:space": "cosine"} # Example: ensure consistent distance metric
     )
     
     print(f"ChromaDB: Successfully got or created collection '{collection_name}' in '{persist_directory}'")
@@ -214,7 +213,6 @@ def chunk_publication(
         else:
             chunks.append(chunk)
 
-    # For any chunks exceeding max_chunk_size, you can further split by paragraphs if needed (optional)
 
     return chunks
 
@@ -283,8 +281,8 @@ def select_prompt_by_similarity(query: str, topic_prompts: dict, threshold: floa
     if best_score < threshold:
         # Fallback generic assistant behavior   
         return {
-            "system_message": "You are a helpful assistant. Answer clearly and concisely.",
-            "instruction": "Make sure the user is asking about football, neuroscience, or sign language AI research.",
+            "system_message": "You are a friendly assistant that sticks to specific topics only. Answer clearly and concisely.",
+            "instruction": "Make sure the user is asking about football, neuroscience, or sign language AI research and nothing else.",
         }
 
     best_topic = topic_names[best_match_idx]

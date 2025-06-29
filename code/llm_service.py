@@ -1,4 +1,5 @@
-
+# Initializes logger and ChromaDB
+# Defines retrieve_relevant_documents and respond_to_query
 import logging
 import torch # For device selection in embeddings
 from langchain_groq import ChatGroq # LLM interaction
@@ -9,8 +10,7 @@ from prompts import build_prompt_from_config # For prompt construction
 logger = logging.getLogger(__name__)
 
 # Initialize the ChromaDB collection globally within this service, as it's a shared resource for retrieval
-def get_or_create_collection():
-    return get_db_collection(collection_name="publications")
+collection = get_db_collection(collection_name="publications")
 
 def retrieve_relevant_documents(
     query: str,
@@ -29,8 +29,6 @@ def retrieve_relevant_documents(
         list[str]: A list of relevant document contents.
     """
     logger.info(f"Retrieving relevant documents for query: '{query}'")
-
-    collection = get_or_create_collection()
 
     relevant_results = {
         "ids": [],

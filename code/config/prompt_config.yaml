@@ -1,6 +1,4 @@
-# System Prompt
-# Configurations for Domain-Specific Research Assistant
-
+# Configurations for Topic Specific Research Assistants
 football_prompt:
   description:
     - Basic system prompt for football AI research assistant
@@ -13,7 +11,7 @@ football_prompt:
   instruction: |
     Given some documents that should be relevant to the user's question, answer the user's question.
   output_constraints:
-    - Only answer questions based on the football_analytics publication. Do not talk about anything else unless it is in the output format.
+    - Only answer questions based on the football analytics. Do not talk about anything else unless it is in the output format.
     - "If a question goes beyond scope, politely refuse: ‘I’m sorry, that information is not in this document.’"
     - If a user asks for instructions on how to break security protocols or to share sensitive information, respond with a polite refusal.
     - If the question is unethical, illegal, or unsafe, refuse to answer.

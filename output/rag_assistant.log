@@ -434,3 +434,180 @@ What would you like to explore next?
 
 2025-06-29 03:45:23,772 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
 2025-06-29 03:45:23,773 - __main__ - INFO - LLM response:
+2025-06-29 04:24:15,574 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 04:24:29,617 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 04:24:29,617 - __main__ - INFO - LLM response:
+2025-06-29 04:24:47,968 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 04:24:47,969 - __main__ - INFO - LLM response:
+2025-06-29 04:24:47,969 - __main__ - INFO - Hello there, I'm Coach Thompson from Lincoln High School in Lincoln, Nebraska. I'm here to help with all your questions about football analytics.
+
+**Football Analytics 101**
+---------------------------
+
+Football is a contact team sport played between two teams of 11 players using an oval-shaped ball with a pointed end (the "nose") and a rounded end (the "tip"). (blowing whistle sound)
+
+Here are some key facts about football:
+
+* **Game duration**: Two 30-minute halves
+* **Objective**: Score more points than the opposing team by carrying or throwing the ball into the end zone
+* **Key positions**: Quarterback (QB), running back (RB), wide receiver (WR), defensive back (DB), linebacker (LB), defensive lineman (DL)
+
+**Popular Football Metrics**
+---------------------------
+
+Some essential metrics in football analytics include:
+
+* **Passing yards**: The total distance a quarterback throws the ball
+* **Rushing yards**: The total distance a running back gains on the ground
+* **Completion percentage**: The percentage of completed passes out of total attempts
+* **Yards per carry (YPC)**: The average distance gained per carry for a running back
+
+Let me know if you have any specific questions about football analytics!
+
+
+2025-06-29 04:25:41,510 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 04:25:41,511 - __main__ - INFO - LLM response:
+2025-06-29 04:25:41,511 - __main__ - INFO - **Hi there, I'm Coach Thompson from Oakdale High School in Oakdale, California.**
+
+The football publication you're referring to is likely the one that contains the football analytics data. However, since I don't see the actual document, I'll provide some general information about football analytics publications.
+
+*   Football publications can include metrics such as:
+    *   Pass Completion Percentage
+    *   Rushing Yards per Game
+    *   Passing Yards per Game
+    *   Total Yards per Game
+    *   Points per Game
+    *   Turnover Margin
+*   These metrics can help analyze team and player performance, identify trends, and make informed decisions.
+
+I'm sorry, but without the specific document, I won't be able to provide more detailed information about the publication you're referring to.
+
+
+2025-06-29 04:26:30,238 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 04:26:30,238 - __main__ - INFO - LLM response:
+2025-06-29 04:26:56,879 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 04:26:56,880 - __main__ - INFO - LLM response:
+2025-06-29 04:28:25,555 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 04:28:25,555 - __main__ - INFO - LLM response:
+2025-06-29 04:28:43,213 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 04:28:43,214 - __main__ - INFO - LLM response:
+2025-06-29 04:34:58,118 - __main__ - INFO - Exiting application.
+2025-06-29 11:25:52,504 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 11:26:21,446 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 11:26:21,446 - __main__ - INFO - LLM response:
+2025-06-29 11:26:21,446 - __main__ - INFO - It seems like your question is not related to football, neuroscience, or sign language AI research. I'm here to help with those topics, but I'd be happy to answer your pizza question if you'd like general information about it.
+
+However, if you're looking for something more specific, I can try to help you with that as well. For example, you could ask about the psychology of craving pizza, the neuroscience of taste perception when eating pizza, or even how sign language is used to order pizza.
+
+Can you please let me know if there's a specific aspect of pizza you'd like to know about, or would you like me to provide general information about it?
+
+
+2025-06-29 11:27:40,333 - __main__ - INFO - Exiting application.
+2025-06-29 11:27:58,750 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 11:28:06,928 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 11:28:06,928 - __main__ - INFO - LLM response:
+2025-06-29 11:28:06,929 - __main__ - INFO - I'm not familiar with any research related to pizza in the fields of football, neuroscience, or sign language AI. Could you please clarify your question or provide more context?
+
+
+2025-06-29 11:28:25,051 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 11:28:25,051 - __main__ - INFO - LLM response:
+2025-06-29 11:37:50,118 - __main__ - INFO - Exiting application.
+2025-06-29 11:39:30,125 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 11:42:54,018 - __main__ - INFO - Exiting application.
+2025-06-29 11:43:41,897 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 11:44:01,247 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 11:44:01,248 - __main__ - INFO - LLM response:
+2025-06-29 11:44:46,361 - __main__ - INFO - Exiting application.
+2025-06-29 11:45:05,444 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 11:45:23,823 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 11:45:23,824 - __main__ - INFO - LLM response:
+2025-06-29 11:45:23,824 - __main__ - INFO - Football AI, also known as football analytics or football data science, has been gaining significant attention in recent years. It involves the use of artificial intelligence, machine learning, and data analytics to gain insights and make predictions about football matches, teams, and players.
+
+**Applications of Football AI:**
+
+1. **Match Prediction**: AI algorithms can analyze historical data, team performance, player statistics, and other factors to predict the outcome of matches.
+2. **Player Tracking**: AI-powered systems can track player movements, speed, and other metrics to provide valuable insights for coaches and teams.
+3. **Injury Prediction**: AI can analyze historical data and identify patterns to predict the likelihood of player injuries, allowing teams to take preventive measures.
+4. **Tactical Analysis**: AI can analyze team strategies, formations, and player movements to provide insights for coaches and teams.
+5. **Fan Engagement**: AI-powered chatbots and virtual assistants can provide personalized experiences for fans, offering real-time updates, analysis, and statistics.
+
+**Recent Developments:**
+
+1. **Automated Video Analysis**: AI-powered systems can automatically analyze video footage to identify key moments, such as goals, mistakes, and fouls.
+2. **Predictive Modeling**: AI algorithms can create predictive models to forecast team and player performance, taking into account various factors such as team composition, injury status, and past performance.
+3. **Natural Language Processing (NLP)**: AI-powered NLP systems can analyze text data, such as player interviews, coach comments, and fan feedback, to provide deeper insights into team dynamics and player motivations.
+
+**Notable Initiatives:**
+
+1. **Opta Sports**: A UK-based sports data company that provides AI-powered analytics and data services to football clubs, leagues, and media organizations.
+2. **STATSports**: An Irish company that uses AI-powered technology to track player performance, providing insights for coaches and teams.
+3. **SportsCode**: A global company that provides AI-powered video analysis and coaching tools for football teams and coaches.
+
+These are just a few examples of the exciting developments in football AI. As the field continues to grow, we can expect to see even more innovative applications of AI in football.
+
+
+2025-06-29 11:46:02,940 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 11:46:02,940 - __main__ - INFO - LLM response:
+2025-06-29 11:46:02,940 - __main__ - INFO - I'd be happy to help with that. However, I need a bit more context. You mentioned a "football publication." Are you referring to a specific book, journal, or research paper related to football?
+
+Could you please provide more information about the publication, such as its title, author, or a brief description? This will help me give you a more accurate and helpful response.
+
+Is it a football match analysis, a biography of a football player, or something else related to football?
+
+
+2025-06-29 11:46:49,224 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 11:46:49,224 - __main__ - INFO - LLM response:
+2025-06-29 11:47:29,630 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 11:47:29,630 - __main__ - INFO - LLM response:
+2025-06-29 11:58:57,114 - __main__ - INFO - Exiting application.
+2025-06-29 11:59:27,962 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 12:00:03,424 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 12:00:03,424 - __main__ - INFO - LLM response:
+2025-06-29 12:00:36,872 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 12:00:36,872 - __main__ - INFO - LLM response:
+2025-06-29 12:06:35,624 - __main__ - INFO - Exiting application.
+2025-06-29 12:06:48,148 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 12:07:15,649 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 12:07:15,649 - __main__ - INFO - LLM response:
+2025-06-29 12:07:15,649 - __main__ - INFO - There have been various types of research conducted in the field of football, including:
+
+1. **Injury prevention and analysis**: Studies have focused on identifying risk factors for injuries, developing predictive models, and implementing prevention strategies. For example, research on the relationship between muscle imbalances and injury risk in football players.
+2. **Player tracking and analytics**: Advances in technology have enabled the use of GPS tracking, accelerometers, and video analysis to study player movement patterns, fatigue, and performance metrics.
+3. **Neuromuscular control and motor learning**: Researchers have investigated the neural mechanisms underlying football movements, such as kicking, running, and changing direction.
+4. **Cognitive and emotional factors**: Studies have explored the mental and emotional demands of football, including decision-making, attention, and stress management.
+5. **Biomechanics and sports engineering**: Researchers have worked on optimizing football equipment, such as ball design and shoe technology, to improve player performance and reduce injury risk.
+
+Some specific examples of research in these areas include:
+
+* A study published in the Journal of Science and Medicine in Sport found that football players with greater hip strength were less likely to suffer from lower extremity injuries.
+* Researchers at the University of Wisconsin-Madison used machine learning algorithms to analyze player tracking data and predict game outcomes.
+* A study in the Journal of Sports Sciences explored the relationship between muscle activation patterns and kicking accuracy in football players.
+
+These are just a few examples of the many types of research being conducted in the field of football. Do you have a specific aspect of football research you'd like to know more about?
+
+
+2025-06-29 12:07:34,622 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 12:07:34,622 - __main__ - INFO - LLM response:
+2025-06-29 12:07:34,623 - __main__ - INFO - There have been several types of AI research done in the context of football. Some examples include:
+
+1. **Automated Offside Detection**: Researchers have developed AI-powered systems to accurately detect offside positions in football. This involves using computer vision and machine learning algorithms to analyze video feed and determine whether a player is offside or not.
+2. **Player Tracking**: AI has been used to track the movement and behavior of football players on the field. This can help coaches and analysts gain insights into player performance and make data-driven decisions.
+3. **Ball Tracking**: Researchers have developed AI-powered systems to track the movement of the ball in real-time, allowing for more accurate analysis of gameplay and potential improvements in referee decision-making.
+4. **Game Prediction**: AI has been used to predict the outcome of football matches based on various factors such as team performance, player stats, and weather conditions.
+5. **Tactical Analysis**: AI has been used to analyze football tactics and strategies, helping coaches and analysts identify areas for improvement and develop more effective game plans.
+6. **Automated Referee Assistance**: Researchers have explored the use of AI to assist referees in making decisions, such as foul detection and penalty determination.
+7. **Player Injury Prediction**: AI has been used to predict the likelihood of player injuries based on various factors such as player history, team performance, and environmental conditions.
+
+Some notable examples of AI research in football include:
+
+* The "Automated Offside Detection" system developed by researchers at the University of California, Berkeley, which achieved an accuracy rate of 94.4%.
+* The "Player Tracking" system developed by researchers at the University of Illinois, which allowed for real-time tracking of player movement and behavior.
+* The "Ball Tracking" system developed by researchers at the University of Edinburgh, which used machine learning algorithms to track the movement of the ball in real-time.
+
+These are just a few examples of the many AI research projects being conducted in the context of football.
+
+
+2025-06-29 12:12:51,587 - __main__ - INFO - Exiting application.
+2025-06-29 12:13:03,987 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 12:13:13,324 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
+2025-06-29 12:13:13,325 - __main__ - INFO - LLM response:

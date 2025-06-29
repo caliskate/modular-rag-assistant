@@ -1,9 +1,6 @@
-
-
+# Handle UTF-8, get main logger, 
+# Define setup_logging, load env vars, main app loop while selecting prompt by similarity
 import os
-# Suppress parallelism warning and Chroma telemetry errors
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
-os.environ["CHROMA_TELEMETRY_ENABLED"] = "false"
 import sys
 import io
 import logging
@@ -14,6 +11,7 @@ from paths import VECTOR_DB_DIR # Import the path constant
 from utils import select_prompt_by_similarity
 from llm_service import respond_to_query # For handling RAG responses
 from paths import APP_CONFIG_FPATH, PROMPT_CONFIG_FPATH, OUTPUTS_DIR # For path constants
+
 # Ensure stdout can handle UTF-8 characters
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
@@ -49,31 +47,31 @@ def setup_logging():
 ## Load environment variables at the application start
 load_dotenv()
 
-
-
 if __name__ == "__main__":
     setup_logging() # Configure logging
     logger.info("Starting RAG Assistant...")
 
     # Load application and prompt configurations
     app_config = load_yaml_config(APP_CONFIG_FPATH)
-    prompt_config_all = load_yaml_config(PROMPT_CONFIG_FPATH) # Renamed to avoid confusion
-    
-    # Extract the RAG assistant specific prompt config
-    rag_prompts = {
-    "football": prompt_config_all["football_prompt"],
-    "neuroscience": prompt_config_all["neuro_prompt"],
-    "sign language": prompt_config_all["sign_language_prompt"],
+    prompt_config_all = load_yaml_config(PROMPT_CONFIG_FPATH)
+        # Initialize LLM model and vector DB defaults from config.yaml
+    llm_model_name = app_config.get("DEFAULT_LLM_MODEL_NAME", "llama-3.1-8b-instant") # Config Model and default model
+    vectordb_params = {
+        "threshold": app_config.get("DEFAULT_SIMILARITY_THRESHOLD", 0.5),
+        "n_results": app_config.get("TOP_K_RETRIEVAL", 5),
     }
-
-    # Extract vector database and LLM parameters from app_config
-    vectordb_params = app_config.get("vectordb", {}) # Use .get() for safer access
-    llm_model_name = app_config.get("llm", "llama-3.1-8b-instant") # Default LLM model
+    
+    # Topic names used for similarity matching prompts
+    rag_prompts = {
+    "football analytics": prompt_config_all["football_prompt"],
+    "neuroscience research": prompt_config_all["neuro_prompt"],
+    "sign language recognition": prompt_config_all["sign_language_prompt"],
+    }
 
     exit_app = False
     while not exit_app:
         query = input(
-            "\nEnter a question about football, neuroscience or sign language AI research, 'config' to change retrieval parameters, or 'exit' to quit: "
+            "\nEnter an AI research question about football, neuroscience or sign language, 'config' to change retrieval parameters, or 'exit' to quit: "
         )
         if query.lower() == "exit": # Use .lower() for case-insensitive comparison
             exit_app = True
@@ -95,8 +93,6 @@ if __name__ == "__main__":
 
 # Select the prompt dynamically
         selected_prompt = select_prompt_by_similarity(query, rag_prompts)
-
-
         response_content = respond_to_query(
             prompt_config=selected_prompt,
             query=query,

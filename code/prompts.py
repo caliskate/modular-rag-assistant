@@ -1,4 +1,5 @@
-
+# loads environment variables, initializes the LLM with Groq
+# Defines build_prompt_from_config
 import yaml
 import os
 from dotenv import load_dotenv
@@ -18,9 +19,6 @@ llm = ChatGroq(
 )
 
 # "Defines the logic for constructing and formatting modular prompts."
-
-from langchain_core.messages import HumanMessage, SystemMessage
-
 def build_prompt_from_config(prompt_config: dict, input_data: str) -> list:
     messages = []
 
