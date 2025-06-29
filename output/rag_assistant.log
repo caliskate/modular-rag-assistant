@@ -677,3 +677,9 @@ The question is answerable given the documents.
 
 2025-06-29 12:38:51,469 - __main__ - INFO - ----------------------------------------------------------------------------------------------------
 2025-06-29 12:38:51,470 - __main__ - INFO - LLM response:
+2025-06-29 12:42:01,026 - __main__ - INFO - Exiting application.
+2025-06-29 12:42:07,385 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 12:44:00,774 - __main__ - INFO - Exiting application.
+2025-06-29 12:45:32,578 - __main__ - INFO - Starting RAG Assistant...
+2025-06-29 12:46:59,425 - __main__ - INFO - Exiting application.
+2025-06-29 12:48:43,656 - __main__ - INFO - Starting RAG Assistant...

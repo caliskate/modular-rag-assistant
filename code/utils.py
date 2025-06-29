@@ -1,12 +1,16 @@
 # Defines load_publication, load_all_publications, load_yaml_config, load_env, save_text_to_file
 # Defines initialize_db, get_db_collection, chunk_publication, embed_documents, insert_publications
 import os
+# Avoid tokenizer and telemetry warnings
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+os.environ["CHROMA_TELEMETRY_ENABLED"] = "false"
 import yaml
 import logging
 import re
 from dotenv import load_dotenv
 from pathlib import Path
 from typing import Union, Optional
+from chromadb.config import Settings
 import glob
 import torch
 import chromadb
@@ -141,10 +145,6 @@ def initialize_db(
     os.makedirs(persist_directory, exist_ok=True)
 
     client = chromadb.PersistentClient(path=persist_directory)
-    # Avoid tokenizer and telemetry warnings
-    os.environ["TOKENIZERS_PARALLELISM"] = "false"
-    os.environ["CHROMA_TELEMETRY_ENABLED"] = "false"
-
 
     # Use get_or_create_collection here for consistency and robustness
     collection = client.get_or_create_collection(
