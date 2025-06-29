@@ -9,8 +9,8 @@ from prompts import build_prompt_from_config # For prompt construction
 logger = logging.getLogger(__name__)
 
 # Initialize the ChromaDB collection globally within this service, as it's a shared resource for retrieval
-# This assumes the DB has already been ingested/initialized by main.py or a separate script.
-collection = get_db_collection(collection_name="publications")
+def get_or_create_collection():
+    return get_db_collection(collection_name="publications")
 
 def retrieve_relevant_documents(
     query: str,
@@ -29,6 +29,9 @@ def retrieve_relevant_documents(
         list[str]: A list of relevant document contents.
     """
     logger.info(f"Retrieving relevant documents for query: '{query}'")
+
+    collection = get_or_create_collection()
+
     relevant_results = {
         "ids": [],
         "documents": [],
@@ -92,7 +95,10 @@ def respond_to_query(
 
     # Combine relevant documents and user query for the LLM input
     input_data = (
-        f"Relevant documents:\n\n{relevant_documents}\n\nUser's question:\n\n{query}"
+    "Relevant documents:\n\n"
+    + "\n\n".join(relevant_documents)
+    + "\n\nUser's question:\n\n"
+    + query
     )
 
     # Build the RAG prompt using the prompt configuration

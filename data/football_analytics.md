@@ -4,7 +4,7 @@ Barnik Chakraborty
 # Abstract
 This project creates an end-to-end football analysis system using computer vision and machine learning to monitor players, referees, and the ball in football match videos. With YOLOv8 for object detection, K-means clustering for team identification, and optical flow for motion tracking, the system computes metrics like ball possession, player movement, and team dynamics. The aim is to offer actionable insights for coaches, analysts, and fans by converting raw video data into meaningful performance metrics.
 
-Introduction
+# Introduction
 Football analysis has become more sophisticated with improvements in computer vision and machine learning, allowing for in-depth analysis of player and team performance. This project seeks to automate football match analysis by identifying and tracking important features in video. The system overcomes issues like accurate object detection, team identification, and accurate movement measurement, providing uses in tactical analysis, fan experience, and performance assessment.
 
 # Methodology

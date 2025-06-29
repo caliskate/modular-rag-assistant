@@ -1,5 +1,7 @@
 import os
 import yaml
+import logging
+import re
 from dotenv import load_dotenv
 from pathlib import Path
 from typing import Union, Optional
@@ -172,17 +174,49 @@ def get_db_collection(
     print(f"ChromaDB: Successfully got or created collection '{collection_name}' in '{persist_directory}'")
     return collection
 
+# Chunking function based on markdown headers
 def chunk_publication(
-    publication: str, chunk_size: int = 1000, chunk_overlap: int = 200
+    markdown_text: str,
+    min_chunk_size: int = 500,
+    max_chunk_size: int = 1500,
 ) -> list[str]:
     """
-    Chunk the publication into smaller documents.
+    Splits markdown content into chunks based on headers (#, ##, ###, etc.).
+
+    Args:
+        markdown_text (str): Full markdown text.
+        min_chunk_size (int): Minimum chunk size in characters.
+        max_chunk_size (int): Maximum chunk size in characters.
+
+    Returns:
+        List[str]: List of markdown chunks.
     """
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap,
-    )
-    return text_splitter.split_text(publication)
+    # Regex pattern to split on markdown headers (keep the header line with chunk)
+    # This splits at each line starting with one or more '#'
+    pattern = re.compile(r'^(#+ .*)$', re.MULTILINE)
+
+    # Find all headers and split positions
+    splits = [(m.start(), m.group(1)) for m in pattern.finditer(markdown_text)]
+
+    # If no headers found, return full text as single chunk
+    if not splits:
+        return [markdown_text]
+
+    chunks = []
+    for i, (start_idx, header) in enumerate(splits):
+        # End index is next header start or end of text
+        end_idx = splits[i + 1][0] if i + 1 < len(splits) else len(markdown_text)
+        chunk = markdown_text[start_idx:end_idx].strip()
+
+        # Merge smaller chunks with previous if below min_chunk_size
+        if chunks and len(chunk) < min_chunk_size:
+            chunks[-1] += "\n\n" + chunk
+        else:
+            chunks.append(chunk)
+
+    # For any chunks exceeding max_chunk_size, you can further split by paragraphs if needed (optional)
+
+    return chunks
 
 def embed_documents(documents: list[str]) -> list[list[float]]:
     """
@@ -228,6 +262,8 @@ def insert_publications(collection: chromadb.Collection, publications: list[str]
             documents=chunked_publication,
         )
         next_id += len(chunked_publication) # Update next_id for the next publication
+
+logger = logging.getLogger(__name__)
 
 def select_prompt_by_similarity(query: str, topic_prompts: dict) -> dict:
     """

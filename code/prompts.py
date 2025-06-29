@@ -22,27 +22,36 @@ llm = ChatGroq(
 from langchain_core.messages import HumanMessage, SystemMessage
 
 def build_prompt_from_config(prompt_config: dict, input_data: str) -> list:
-    """
-    Builds a LangChain prompt (list of messages) from a prompt configuration dictionary.
-    This is a placeholder and should be adapted to your specific prompt structuring logic.
-    """
     messages = []
 
-    # Add system message if role is defined
-    if "role" in prompt_config:
-        messages.append(SystemMessage(content=prompt_config["role"]))
+    system_content = ""
 
-    # Add instruction (if any)
+    if "description" in prompt_config:
+        if isinstance(prompt_config["description"], list):
+            system_content += "# " + " ".join(prompt_config["description"]) + "\n\n"
+        else:
+            system_content += "# " + prompt_config["description"] + "\n\n"
+
+    system_content += prompt_config.get("role", "")
+
+    if "personality" in prompt_config:
+        system_content += "\n\n" + prompt_config["personality"]
+
+    if "style_or_tone" in prompt_config:
+        system_content += "\n\n" + "\n".join(prompt_config["style_or_tone"])
+
+    if "output_constraints" in prompt_config:
+        system_content += "\n\n" + "\n".join(prompt_config["output_constraints"])
+
+    if "output_format" in prompt_config:
+        system_content += "\n\n" + "\n".join(prompt_config["output_format"])
+
+    messages.append(SystemMessage(content=system_content))
+
     if "instruction" in prompt_config:
         messages.append(HumanMessage(content=prompt_config["instruction"]))
 
-    # Add the user input data
     messages.append(HumanMessage(content=input_data))
 
-    # You might want to add personality, style_or_tone, output_constraints here
-    # by appending to the system message or adding separate system/human messages
-    # for more complex prompt engineering.
-
     return messages
-
 
