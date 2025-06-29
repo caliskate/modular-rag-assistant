@@ -1,7 +1,20 @@
 
-# modular-rag-assistant
-RAG-based, vector storage, corpus embedding, prompt/retrieval/response AI assistant with modular prompt based on user query.
-<br>Ready Tensor Agentic AI Developer Certification - Module 1
+# Abstract
+This project implements a modular Retrieval-Augmented Generation (RAG) assistant that dynamically selects specialized prompts based on semantic similarity to the user’s query. Designed to support AI research in focused domains—such as football analytics, neuroscience, and sign language recognition—the assistant integrates ChromaDB for vector storage, LangChain for LLM orchestration, and Groq-hosted LLaMA 3.1 for fast inference. It emphasizes prompt structure and constraint enforcement to ensure domain-specific, safety-aligned responses.
+
+# 1. Introduction
+The rise of domain-specific AI research requires intelligent assistants capable of retrieving and contextualizing relevant publications. This assistant addresses that need by combining modular prompt engineering with vector similarity search, ensuring responses are accurate, scoped, and stylistically aligned with the user’s intent and the associated research domain.
+
+# 2. Dataset
+
+Datasets are in markdown format and are AI research publications related to football, neuroscience and sign language.
+
+# 3. Methodology
+The system employs SentenceTransformer embeddings to index and search markdown-based research documents. A user query is embedded and compared with predefined topic categories to select a matching prompt template. Retrieved markdown format chunks based on the relevant documents are then passed, along with the query, into a structured prompt to the LLM. The pipeline leverages OpenAI embeddings for document encoding and LangChain's Groq integration for real-time generation.
+
+
+
+
 
 ## Overview
 
@@ -57,7 +70,8 @@ modular-rag-assistant/
 
    You can get your API key from [Groq](https://console.groq.com/).
 
-
+# 4. How it Works
+When a user enters a query, the assistant computes the semantic similarity of the query to predefined topics using all-MiniLM-L6-v2. Based on the best match, a domain-specific prompt (e.g., for football, neuroscience, or sign language) is selected. The assistant then queries a ChromaDB vector store for relevant documents, constructs a rich LLM prompt using these documents and the selected template, and finally returns a formatted response from the Groq LLaMA model.
 
 ## Usage
 
@@ -67,6 +81,25 @@ modular-rag-assistant/
 
 This launches the assistant in your terminal or command-line interface.
 You’ll be prompted to enter a question about football, neuroscience, or sign language AI research, or type config or exit.
+
+
+# 5. Key Features
+Modular prompt selection via query-topic similarity.
+
+Document-grounded responses using ChromaDB vector search.
+
+Domain enforcement through strict output constraints in prompt configuration.
+
+Stylistic customization such as markdown formatting and domain-specific language (e.g., coach-style speech or lab noises).
+
+High-speed inference powered by Groq-hosted LLaMA 3.1 models.
+
+# 6. Examples
+
+
+# 8. Conclusion
+This modular RAG assistant demonstrates how controlled, prompt-based architectures can guide general-purpose LLMs to deliver reliable, focused, and engaging outputs in specialized domains. With extensible design and safety constraints embedded in the prompting layer, it serves as a robust foundation for future research or productization in domain-aware assistants.
+
 
 
 
