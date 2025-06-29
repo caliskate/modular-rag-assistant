@@ -141,8 +141,9 @@ def initialize_db(
     os.makedirs(persist_directory, exist_ok=True)
 
     client = chromadb.PersistentClient(path=persist_directory)
-    # Avoid tokenizer parallelism warning
+    # Avoid tokenizer and telemetry warnings
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    os.environ["CHROMA_TELEMETRY_ENABLED"] = "false"
 
 
     # Use get_or_create_collection here for consistency and robustness
