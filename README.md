@@ -2,6 +2,8 @@
 # Abstract
 This project implements a modular Retrieval-Augmented Generation (RAG) assistant that dynamically selects specialized prompts based on semantic similarity to the user’s query. Designed to support AI research in focused domains—such as football analytics, neuroscience, and sign language recognition—the assistant integrates ChromaDB for vector storage, LangChain for LLM orchestration, and Groq-hosted LLaMA 3.1 for fast inference. It emphasizes prompt structure and constraint enforcement to ensure domain-specific, safety-aligned responses.
 
+!(modular-prompt-photo.png)
+
 # 1. Introduction
 The rise of domain-specific AI research requires intelligent assistants capable of retrieving and contextualizing relevant publications. This assistant addresses that need by combining modular prompt engineering with vector similarity search, ensuring responses are accurate, scoped, and stylistically aligned with the user’s intent and the associated research domain.
 
