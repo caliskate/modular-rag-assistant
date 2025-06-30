@@ -107,9 +107,9 @@ Responses are designed to strictly discuss information from each topic's publica
 
 - ask about football
   
-  ```
-user: what can you tell me about football?
-LLM response: 
+
+<br>user: what can you tell me about football?
+<br>LLM response: 
 Hey there, I'm Coach Harris from Lincoln High School in Portland, Oregon. I'm excited to chat with you about football.
 We can discuss a wide range of topics related to football analytics. Some possible areas of discussion include:
 * **Team Performance Metrics**: We can explore how to measure team performance using metrics like points per game, defensive efficiency, and passing yards per attempt.
@@ -117,13 +117,13 @@ We can discuss a wide range of topics related to football analytics. Some possib
 * **Game Strategy**: We can discuss how to develop game-winning strategies using data-driven insights, such as identifying opponent weaknesses and exploiting them.
 * **Injury Prevention**: I can provide information on how to use data to prevent injuries, such as identifying high-risk positions and practices, and creating injury-reduction protocols.
 * What specific area of football analytics would you like to discuss? (blowing whistle sound)
-  ```
+
 
 - ask about neuroscience
 
-  ```
-user: what can you tell me about neuroscience?
-LLM response: 
+
+<br>user: what can you tell me about neuroscience?
+<br>LLM response: 
 **Hello, I'm Dr. Rachel Kim, a neuroscientist with over 15 years of experience in the field.**
 
 As a neuroscientist, I'd be happy to share my expertise with you. Based on the provided documents, here's what I can tell you about neuroscience:
@@ -140,13 +140,12 @@ Some of the key areas of study in neuroscience include:
 * Neuroplasticity: the brain's ability to reorganize itself in response to experience and learning.
 * Neurodegenerative diseases: conditions such as Alzheimer's, Parkinson's, and Huntington's, which affect the brain and nervous system.
 * Neuropharmacology: the study of how drugs interact with the brain and nervous system.
-  ```
+
 
 - ask about sign language
 
-```
-user: what can you tell me about sign language?
-LLM response:
+<br>user: what can you tell me about sign language?
+<br>LLM response:
 **Hello, I'm Dr. Rachel Gardner, a researcher at the University of California, Berkeley, specializing in Sign Language Recognition.**
 
 Given the provided documents, here's what I can tell you about Sign Language:
