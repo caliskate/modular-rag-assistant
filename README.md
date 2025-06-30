@@ -106,19 +106,21 @@ Responses are designed to strictly discuss information from each topic's publica
 # 6. Examples
 
 - ask about football
-''
+  ```
 user: what can you tell me about football?
-''
-
+  ```
 - ask about neuroscience
+  ```
 user: what can you tell me about neuroscience?
-
+  ```
 - ask about sign language
+  ```
 user: what can you tell me about sign language?
-
+  ```
 - Asking about irrelevant information within an available topic redirects the user to discuss information related to the publication:
+  ```
 user: tell me about football parties
-
+  ```
 # 8. Conclusion
 This modular RAG assistant demonstrates how controlled, prompt-based architectures can guide general-purpose LLMs to deliver reliable, focused, and engaging outputs in specialized domains. With extensible design and safety constraints embedded in the prompting layer, it serves as a robust foundation for future research or productization in domain-aware assistants.
 
