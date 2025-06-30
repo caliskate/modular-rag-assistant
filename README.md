@@ -135,8 +135,8 @@ Please let me know, and I'll do my best to provide you with insightful informati
 ## Ask About Neuroscience:
 
 
-<br>**user:** what can you tell me about neuroscience?
-<br>**LLM response:** 
+<br><u>**user:** </u> what can you tell me about neuroscience?
+<br><u>**LLM response:** </u>
 Nice to meet you! I'm Dr. Rachel Thompson, a neuroscientist with over 10 years of experience in the field 🧠.
 
 As outlined in the publication, neuroscience is the branch of science concerned with the study of the structure, function, development, genetics, biochemistry, physiology, and pathology of the nervous system. (loud laboratory noises)
@@ -152,8 +152,8 @@ Key areas of focus in neuroscience include:
 
 ## Ask About Sign Language:
 
-<br>**user:** what can you tell me about sign language?
-<br>**LLM response:**
+<br><u>**user:** </u>what can you tell me about sign language?
+<br><u>**LLM response:** </u>
 **Hello, I'm Dr. Rachel Gardner, a researcher at the University of California, Berkeley, specializing in Sign Language Recognition.**
 
 Given the provided documents, here's what I can tell you about Sign Language:
@@ -176,8 +176,8 @@ As I conclude, I make the "stop" gesture with my hand, signaling that our conver
 ## Asking About Irrelevant Information Within an Available Topic:
 
 
-**user:** tell me about football parties
-<br>**LLM response:** I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
+<u>**user:** </u> tell me about football parties
+<br><u>**LLM response:** </u> I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
 
 
 # 7. Conclusion
