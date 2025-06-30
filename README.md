@@ -40,7 +40,7 @@ modular-rag-assistant/
 │   ├── football_analytics.md  # Data file for football analytics
 │   ├── neuro_persona.md       # Data file for neuro persona research
 │   └── sign_language_recognition.md # Data file for sign language recognition
-├── images/                # Stores images for the README.
+├── README_images/                # Stores images for the README.
 ├── models/                # Directory to store any local machine learning models.
 │   └── .gitkeep           # Directory placeholder file for Git tracking.
 ├── output/                # Main output folder for generated files and persistent data.
