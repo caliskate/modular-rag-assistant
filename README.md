@@ -94,7 +94,7 @@ Document-grounded responses using ChromaDB vector search.
 
 Domain enforcement through strict output constraints in prompt configuration.
 
-Stylistic customization such as markdown formatting and domain-specific language (e.g., coach-style speech or lab noises, sign language gestures and emoji themes: 🏈,🧠,✌️).
+Stylistic customization such as markdown formatted responses, domain-specific language (e.g., football coach style speach or neurology lab noises, sign language gestures and emoji themed responses with a personified assistant introduction: 🏈,🧠,✌️).
 
 High-speed inference powered by Groq-hosted LLaMA 3.1 models.
 
