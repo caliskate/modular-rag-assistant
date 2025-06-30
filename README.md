@@ -1,9 +1,11 @@
+# AI Research Assistant With RAG and Modular Prompts
+Courtesy of ReadyTensor AAIDC2025
 
 # Abstract
-This project implements a modular Retrieval-Augmented Generation (RAG) assistant that dynamically selects specialized prompts based on semantic similarity to the user’s query. Designed to support AI research in focused domains (football analytics, neuroscience, and sign language recognition) the assistant integrates ChromaDB for vector storage, LangChain for LLM orchestration, and Groq-hosted LLaMA 3.1 for fast inference. It emphasizes prompt structure and constraint enforcement to ensure domain-specific, safety-aligned responses.
+This project implements a modular Retrieval-Augmented Generation (RAG) assistant that dynamically selects relevant publications and specialized prompts based on semantic similarity via HuggingFace embedding model, all-MiniLM-L6-v2, depending on the user’s query. Designed to focus on AI research within focused domains (football analytics, neuroscience, and sign language recognition) the assistant integrates ChromaDB for vector storage, LangChain for LLM orchestration, and Groq-hosted LLaMA 3.1 for fast inference. It emphasizes prompt structure and constraint enforcement to ensure domain-specific, safety-aligned responses.
 
 <p align="center">
-  <img src="modular-prompt-photo.png" alt="Modular Prompt Photo" width="50%" />
+  <img src="README_images/modular-prompt-photo.png" alt="Modular Prompt Photo" width="50%" />
 </p>
 
 # 1. Introduction
@@ -14,7 +16,7 @@ The rise of domain-specific AI research requires intelligent assistants capable 
 Datasets are in markdown format and are AI research publications related to football, neuroscience and sign language.
 
 # 3. Methodology
-The system employs SentenceTransformer embeddings to index and search markdown-based research documents. A user query is embedded and compared with predefined topic categories to select a matching prompt template. Retrieved markdown format chunks based on the relevant documents are then passed, along with the query, into a structured prompt to the LLM. The pipeline leverages OpenAI embeddings for document encoding and LangChain's Groq integration for real-time generation.
+The system employs SentenceTransformer embeddings to index and search markdown-based research documents. A user query is embedded and compared with predefined topic categories to select a matching prompt template. Retrieved chunks split by format headers, based on the relevant documents are then passed, along with the query, into a structured prompt to the LLM. The pipeline leverages OpenAI embeddings for document encoding and LangChain's Groq integration for real-time generation.
 
 
 
@@ -40,7 +42,7 @@ modular-rag-assistant/
 │   ├── football_analytics.md  # Data file for football analytics
 │   ├── neuro_persona.md       # Data file for neuro persona research
 │   └── sign_language_recognition.md # Data file for sign language recognition
-├── images/                # Stores images for the README.
+├── README_images/                # Stores images for the README.
 ├── models/                # Directory to store any local machine learning models.
 │   └── .gitkeep           # Directory placeholder file for Git tracking.
 ├── output/                # Main output folder for generated files and persistent data.
@@ -106,11 +108,11 @@ Responses are designed to strictly discuss information from each topic's publica
 
 # 6. Examples
 
-## Ask about football
+## Ask About Football:
   
 
-<br>user: what can you tell me about football?
-<br>LLM response: 
+<br>**user :** what can you tell me about football?
+<br>**LLM response:** 
 **Hello, I'm Coach Thompson from Oakdale High School in Oakdale, CA.**
 
 I'd be happy to discuss football with you! Let's dive into the world of Football Analytics.
@@ -131,11 +133,11 @@ Please let me know, and I'll do my best to provide you with insightful informati
 🏈 Good luck!
 
 
-## Ask about neuroscience
+## Ask About Neuroscience:
 
 
-<br>user: what can you tell me about neuroscience?
-<br>LLM response: 
+<br>**user:**  what can you tell me about neuroscience?
+<br>**LLM response:** 
 Nice to meet you! I'm Dr. Rachel Thompson, a neuroscientist with over 10 years of experience in the field 🧠.
 
 As outlined in the publication, neuroscience is the branch of science concerned with the study of the structure, function, development, genetics, biochemistry, physiology, and pathology of the nervous system. (loud laboratory noises)
@@ -149,10 +151,10 @@ Key areas of focus in neuroscience include:
 (loud laboratory noises)
 
 
-## Ask about sign language
+## Ask About Sign Language:
 
-<br>user: what can you tell me about sign language?
-<br>LLM response:
+<br>**user:** what can you tell me about sign language?
+<br>**LLM response:** 
 **Hello, I'm Dr. Rachel Gardner, a researcher at the University of California, Berkeley, specializing in Sign Language Recognition.**
 
 Given the provided documents, here's what I can tell you about Sign Language:
@@ -172,18 +174,18 @@ Given the provided documents, here's what I can tell you about Sign Language:
 **✌️**
 As I conclude, I make the "stop" gesture with my hand, signaling that our conversation has come to an end.
 
-## Asking about irrelevant information within an available topic redirects the user to discuss information related to the publication:
+## Asking About Irrelevant Information Within an Available Topic:
 
 
-user: tell me about football parties
-<br>LLM response: I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
+**user:**  tell me about football parties
+<br>**LLM response:**  I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
 
 
-# 8. Conclusion
-This modular RAG assistant demonstrates how controlled, prompt-based architectures can guide general-purpose LLMs to deliver reliable, focused, and engaging outputs in specialized domains. With extensible design and safety constraints embedded in the prompting layer, it serves as a robust foundation for future research or productization in domain-aware assistants.
+# 7. Conclusion
+This modular RAG assistant demonstrates how controlled, prompt-based architectures can guide general-purpose LLMs to deliver reliable, focused, and engaging outputs in specialized domains. With extensible design and safety constraints embedded in the prompting layer, it serves as a robust foundation for future research in domain-aware RAG chat assistants.
 
-
-
+# 8. Contact
+Feel free to reach me via email (dverduzco@sandiego.edu) or Discord (d_verduzco)
 
 
 
