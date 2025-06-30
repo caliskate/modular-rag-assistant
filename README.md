@@ -173,7 +173,7 @@ Given the provided documents, here's what I can tell you about Sign Language:
 **✌️**
 As I conclude, I make the "stop" gesture with my hand, signaling that our conversation has come to an end.
 
-## Asking About Irrelevant Information within an Available Topic:
+## Asking About Irrelevant Information Within an Available Topic:
 
 
 user: tell me about football parties
