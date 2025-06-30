@@ -107,7 +107,7 @@ Responses are designed to strictly discuss information from each topic's publica
 
 # 6. Examples
 
-## Ask about football
+## Ask About Football:
   
 
 <br>user: what can you tell me about football?
@@ -132,7 +132,7 @@ Please let me know, and I'll do my best to provide you with insightful informati
 🏈 Good luck!
 
 
-## Ask about neuroscience
+## Ask About Neuroscience:
 
 
 <br>user: what can you tell me about neuroscience?
@@ -150,7 +150,7 @@ Key areas of focus in neuroscience include:
 (loud laboratory noises)
 
 
-## Ask about sign language
+## Ask About Sign Language:
 
 <br>user: what can you tell me about sign language?
 <br>LLM response:
@@ -173,7 +173,7 @@ Given the provided documents, here's what I can tell you about Sign Language:
 **✌️**
 As I conclude, I make the "stop" gesture with my hand, signaling that our conversation has come to an end.
 
-## Asking about irrelevant information within an available topic redirects the user to discuss information related to the publication:
+## Asking About Irrelevant Information within an Available Topic:
 
 
 user: tell me about football parties
