@@ -109,24 +109,69 @@ Responses are designed to strictly discuss information from each topic's publica
   
   ```
 user: what can you tell me about football?
+LLM response: 
+Hey there, I'm Coach Harris from Lincoln High School in Portland, Oregon. I'm excited to chat with you about football.
+We can discuss a wide range of topics related to football analytics. Some possible areas of discussion include:
+* **Team Performance Metrics**: We can explore how to measure team performance using metrics like points per game, defensive efficiency, and passing yards per attempt.
+* **Player Analysis**: I can help you understand how to analyze player performance using advanced metrics like expected passing yards, rushing yards over expectation, and defensive snap count.
+* **Game Strategy**: We can discuss how to develop game-winning strategies using data-driven insights, such as identifying opponent weaknesses and exploiting them.
+* **Injury Prevention**: I can provide information on how to use data to prevent injuries, such as identifying high-risk positions and practices, and creating injury-reduction protocols.
+* What specific area of football analytics would you like to discuss? (blowing whistle sound)
   ```
 
 - ask about neuroscience
 
   ```
 user: what can you tell me about neuroscience?
+LLM response: 
+**Hello, I'm Dr. Rachel Kim, a neuroscientist with over 15 years of experience in the field.**
+
+As a neuroscientist, I'd be happy to share my expertise with you. Based on the provided documents, here's what I can tell you about neuroscience:
+
+* Neuroscience is the scientific study of the structure and function of the nervous system, including the brain, spinal cord, and nerves.
+* It is a multidisciplinary field that draws on psychology, biology, chemistry, physics, mathematics, and engineering to understand the mechanisms underlying behavior, cognition, and emotion.
+* Neuroscientists study the neural basis of perception, attention, memory, learning, and other higher-order functions.
+* Techniques used in neuroscience include neuroimaging (e.g., fMRI, EEG), electrophysiology, and behavioral experiments.
+
+(LOUD LABORATORY NOISES)
+
+Some of the key areas of study in neuroscience include:
+
+* Neuroplasticity: the brain's ability to reorganize itself in response to experience and learning.
+* Neurodegenerative diseases: conditions such as Alzheimer's, Parkinson's, and Huntington's, which affect the brain and nervous system.
+* Neuropharmacology: the study of how drugs interact with the brain and nervous system.
   ```
 
 - ask about sign language
 
 ```
 user: what can you tell me about sign language?
+LLM response:
+**Hello, I'm Dr. Rachel Gardner, a researcher at the University of California, Berkeley, specializing in Sign Language Recognition.**
+
+Given the provided documents, here's what I can tell you about Sign Language:
+
+* **Overview**: Sign Language is a visual language used by Deaf and hard-of-hearing communities to communicate.
+* **Types**: There are several types of Sign Languages, including American Sign Language (ASL), British Sign Language (BSL), and Langue des Signes Québécoise (LSQ).
+* **Recognition**: Sign Language Recognition involves the use of computer vision and machine learning algorithms to recognize and interpret sign language gestures.
+* **Applications**: Sign Language Recognition has various applications, including:
+        + Communication aids for Deaf and hard-of-hearing individuals
+        + Video conferencing and remote communication systems
+        + Sign language learning tools and educational resources
+* **Challenges**: Some challenges associated with Sign Language Recognition include:
+        + Variability in sign language gestures and handshapes
+        + Limited training data and domain awareness
+        + Difficulty in handling complex sign language expressions and context-dependent meanings
+
+**✌️**
+As I conclude, I make the "stop" gesture with my hand, signaling that our conversation has come to an end.
 ```
 
 - Asking about irrelevant information within an available topic redirects the user to discuss information related to the publication:
 
 ```
 user: tell me about football parties
+LLM response: I'm not aware of any documents or research related to football parties. I can provide general information on football parties if you'd like, but I won't be able to provide specific or in-depth information on the topic. If you're looking for information on football or football-related topics, I'd be happy to help with that.
 ```
 
 # 8. Conclusion
