@@ -106,7 +106,9 @@ Responses are designed to strictly discuss information from each topic's publica
 # 6. Examples
 
 - ask about football
+''
 user: what can you tell me about football?
+''
 
 - ask about neuroscience
 user: what can you tell me about neuroscience?
