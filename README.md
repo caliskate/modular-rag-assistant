@@ -105,7 +105,7 @@ Responses are designed to strictly discuss information from each topic's publica
 
 # 6. Examples
 
-- ask about football
+## Ask about football
   
 
 <br>user: what can you tell me about football?
@@ -119,7 +119,7 @@ We can discuss a wide range of topics related to football analytics. Some possib
 * What specific area of football analytics would you like to discuss? (blowing whistle sound)
 
 
-- ask about neuroscience
+## Ask about neuroscience
 
 
 <br>user: what can you tell me about neuroscience?
@@ -142,7 +142,7 @@ Some of the key areas of study in neuroscience include:
 * Neuropharmacology: the study of how drugs interact with the brain and nervous system.
 
 
-- ask about sign language
+## Ask about sign language
 
 <br>user: what can you tell me about sign language?
 <br>LLM response:
@@ -164,9 +164,8 @@ Given the provided documents, here's what I can tell you about Sign Language:
 
 **✌️**
 As I conclude, I make the "stop" gesture with my hand, signaling that our conversation has come to an end.
-```
 
-- Asking about irrelevant information within an available topic redirects the user to discuss information related to the publication:
+## Asking about irrelevant information within an available topic redirects the user to discuss information related to the publication:
 
 ```
 user: tell me about football parties
