@@ -179,11 +179,11 @@ user: tell me about football parties
 <br>LLM response: I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
 
 
-# 8. Conclusion
+# 7. Conclusion
 This modular RAG assistant demonstrates how controlled, prompt-based architectures can guide general-purpose LLMs to deliver reliable, focused, and engaging outputs in specialized domains. With extensible design and safety constraints embedded in the prompting layer, it serves as a robust foundation for future research or productization in domain-aware assistants.
 
-
-
+# 8. Contact
+Feel free to reach me via email (dverduzco@sandiego.edu) or Discord (d_verduzco)
 
 
 
