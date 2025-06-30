@@ -167,10 +167,10 @@ As I conclude, I make the "stop" gesture with my hand, signaling that our conver
 
 ## Asking about irrelevant information within an available topic redirects the user to discuss information related to the publication:
 
-```
+
 user: tell me about football parties
-LLM response: I'm not aware of any documents or research related to football parties. I can provide general information on football parties if you'd like, but I won't be able to provide specific or in-depth information on the topic. If you're looking for information on football or football-related topics, I'd be happy to help with that.
-```
+<br>LLM response: I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
+
 
 # 8. Conclusion
 This modular RAG assistant demonstrates how controlled, prompt-based architectures can guide general-purpose LLMs to deliver reliable, focused, and engaging outputs in specialized domains. With extensible design and safety constraints embedded in the prompting layer, it serves as a robust foundation for future research or productization in domain-aware assistants.
