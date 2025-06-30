@@ -110,13 +110,24 @@ Responses are designed to strictly discuss information from each topic's publica
 
 <br>user: what can you tell me about football?
 <br>LLM response: 
-Hey there, I'm Coach Harris from Lincoln High School in Portland, Oregon. I'm excited to chat with you about football.
-We can discuss a wide range of topics related to football analytics. Some possible areas of discussion include:
-* **Team Performance Metrics**: We can explore how to measure team performance using metrics like points per game, defensive efficiency, and passing yards per attempt.
-* **Player Analysis**: I can help you understand how to analyze player performance using advanced metrics like expected passing yards, rushing yards over expectation, and defensive snap count.
-* **Game Strategy**: We can discuss how to develop game-winning strategies using data-driven insights, such as identifying opponent weaknesses and exploiting them.
-* **Injury Prevention**: I can provide information on how to use data to prevent injuries, such as identifying high-risk positions and practices, and creating injury-reduction protocols.
-* What specific area of football analytics would you like to discuss? (blowing whistle sound)
+**Hello, I'm Coach Thompson from Oakdale High School in Oakdale, CA.**
+
+I'd be happy to discuss football with you! Let's dive into the world of Football Analytics.
+
+**What aspect of football would you like to explore?**
+
+Are you interested in:
+
+* Game strategy?
+* Player performance?
+* Team statistics?
+* Other?
+
+**(blowing whistle sound)**
+
+Please let me know, and I'll do my best to provide you with insightful information.
+
+🏈 Good luck!
 
 
 ## Ask about neuroscience
@@ -124,22 +135,17 @@ We can discuss a wide range of topics related to football analytics. Some possib
 
 <br>user: what can you tell me about neuroscience?
 <br>LLM response: 
-**Hello, I'm Dr. Rachel Kim, a neuroscientist with over 15 years of experience in the field.**
+Nice to meet you! I'm Dr. Rachel Thompson, a neuroscientist with over 10 years of experience in the field 🧠.
 
-As a neuroscientist, I'd be happy to share my expertise with you. Based on the provided documents, here's what I can tell you about neuroscience:
+As outlined in the publication, neuroscience is the branch of science concerned with the study of the structure, function, development, genetics, biochemistry, physiology, and pathology of the nervous system. (loud laboratory noises)
 
-* Neuroscience is the scientific study of the structure and function of the nervous system, including the brain, spinal cord, and nerves.
-* It is a multidisciplinary field that draws on psychology, biology, chemistry, physics, mathematics, and engineering to understand the mechanisms underlying behavior, cognition, and emotion.
-* Neuroscientists study the neural basis of perception, attention, memory, learning, and other higher-order functions.
-* Techniques used in neuroscience include neuroimaging (e.g., fMRI, EEG), electrophysiology, and behavioral experiments.
+Key areas of focus in neuroscience include:
 
-(LOUD LABORATORY NOISES)
+* Neuroplasticity: the brain's ability to adapt and change throughout life
+* Neurotransmitters: chemical messengers that facilitate communication between neurons
+* Synaptic transmission: the process by which neurons communicate with each other
 
-Some of the key areas of study in neuroscience include:
-
-* Neuroplasticity: the brain's ability to reorganize itself in response to experience and learning.
-* Neurodegenerative diseases: conditions such as Alzheimer's, Parkinson's, and Huntington's, which affect the brain and nervous system.
-* Neuropharmacology: the study of how drugs interact with the brain and nervous system.
+(loud laboratory noises)
 
 
 ## Ask about sign language
