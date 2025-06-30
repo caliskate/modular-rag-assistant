@@ -17,8 +17,12 @@ import shutil
 from langchain_huggingface import HuggingFaceEmbeddings
 from paths import VECTOR_DB_DIR # Import the VECTOR_DB_DIR constant
 from paths import DATA_DIR
+from paths import APP_CONFIG_FPATH
 from sentence_transformers import SentenceTransformer, util
 
+# Embedding model name from config
+app_config = load_yaml_config(APP_CONFIG_FPATH)
+model_name = app_config["EMBEDDING_MODEL_NAME"]
 
 def load_publication(publication_external_id="yzN0OCQT7hUS"):
     """Loads the publication markdown file.
@@ -230,7 +234,7 @@ def embed_documents(documents: list[str]) -> list[list[float]]:
         else "mps" if torch.backends.mps.is_available() else "cpu"
     )
     model = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        model_name=model_name,
         model_kwargs={"device": device},
     )
 
