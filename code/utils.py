@@ -20,9 +20,7 @@ from paths import DATA_DIR
 from paths import APP_CONFIG_FPATH
 from sentence_transformers import SentenceTransformer, util
 
-# Embedding model name from config
-app_config = load_yaml_config(APP_CONFIG_FPATH)
-model_name = app_config["EMBEDDING_MODEL_NAME"]
+
 
 def load_publication(publication_external_id="yzN0OCQT7hUS"):
     """Loads the publication markdown file.
@@ -295,3 +293,7 @@ def select_prompt_by_similarity(query: str, topic_prompts: dict, threshold: floa
 
     best_topic = topic_names[best_match_idx]
     return topic_prompts[best_topic]
+
+# Embedding model name from config
+app_config = load_yaml_config(APP_CONFIG_FPATH)
+model_name = app_config["EMBEDDING_MODEL_NAME"]
