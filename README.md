@@ -14,9 +14,9 @@ The rise of domain-specific AI research requires intelligent assistants capable 
 # 2. Dataset
 
 Datasets stored in "data" directory are in markdown format containing AI research publications related to football, neuroscience and sign language.
-football_analytics.md  - https://app.readytensor.ai/publications/football-analytics-E10sJqzRdhuM
-neuro_persona.md       - https://app.readytensor.ai/publications/neuropersona-A9Nex0aLF2Lp
-sign_language_recognition.md - https://app.readytensor.ai/publications/american-sign-language-recognition-to-speech-system-for-medical-communication-w59iywWFcsst
+<br>football_analytics.md  - https://app.readytensor.ai/publications/football-analytics-E10sJqzRdhuM
+<br>neuro_persona.md       - https://app.readytensor.ai/publications/neuropersona-A9Nex0aLF2Lp
+<br>sign_language_recognition.md - https://app.readytensor.ai/publications/american-sign-language-recognition-to-speech-system-for-medical-communication-w59iywWFcsst
 
 # 3. Methodology
 The system employs SentenceTransformer embeddings to index and search markdown-based research documents. A user query is embedded and compared with predefined topic categories to select a matching prompt template. Retrieved chunks split by format headers, based on the relevant documents are then passed, along with the query, into a structured prompt to the LLM. The pipeline leverages OpenAI embeddings for document encoding and LangChain's Groq integration for real-time generation.
