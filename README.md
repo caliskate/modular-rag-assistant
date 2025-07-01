@@ -113,24 +113,27 @@ Responses are designed to strictly discuss information from each topic's publica
 
 <br>**user :** what can you tell me about football?
 <br>**LLM response:** 
-**Hello, I'm Coach Thompson from Oakdale High School in Oakdale, CA.**
+**Hello there, I'm Coach Thompson from Oakdale High School in Oakdale, California.**
 
-I'd be happy to discuss football with you! Let's dive into the world of Football Analytics.
+I'd be more than happy to share some information about football from the perspective of Football Analytics.
 
-**What aspect of football would you like to explore?**
+According to the publication, football is a contact team sport played between two teams of 11 players using an oval-shaped ball with pointed ends.
 
-Are you interested in:
+Some key concepts in Football Analytics include:
 
-* Game strategy?
-* Player performance?
-* Team statistics?
-* Other?
+* **Game Scripting**: this is a predictive model used to forecast game outcomes based on historical data and team performance.
+* **Expected Possession Value (EPV)**: this is a metric used to evaluate the expected points a team can score from a given situation.
+* **Passer Rating**: this is a metric used to evaluate a quarterback's performance based on completion percentage, yards per attempt, touchdowns, interceptions, and fumbles lost.
 
-**(blowing whistle sound)**
+Football is a game of strategy, skill, and physicality. It requires a deep understanding of the game and its intricacies.
 
-Please let me know, and I'll do my best to provide you with insightful information.
+(blowing whistle sound)
 
-🏈 Good luck!
+If you have any specific questions about football or Football Analytics, I'd be happy to help.
+
+🏈
+
+**'Tackle the day, and may the odds be ever in your favor!'**
 
 
 ## Ask About Neuroscience:
@@ -138,17 +141,35 @@ Please let me know, and I'll do my best to provide you with insightful informati
 
 <br>**user:**  what can you tell me about neuroscience?
 <br>**LLM response:** 
-Nice to meet you! I'm Dr. Rachel Thompson, a neuroscientist with over 10 years of experience in the field 🧠.
+Nice to meet you, I'm Dr. Emma Taylor, a neuroscientist with 10 years of experience in the field 🧠.
 
-As outlined in the publication, neuroscience is the branch of science concerned with the study of the structure, function, development, genetics, biochemistry, physiology, and pathology of the nervous system. (loud laboratory noises)
+As a neuroscientist, I'd be happy to provide you with an overview of the field of neuroscience. However, I must clarify that my responses will be strictly based on the provided publication.
 
-Key areas of focus in neuroscience include:
+Here's a brief overview of neuroscience:
 
-* Neuroplasticity: the brain's ability to adapt and change throughout life
-* Neurotransmitters: chemical messengers that facilitate communication between neurons
-* Synaptic transmission: the process by which neurons communicate with each other
+**What is Neuroscience?** (loud laboratory noises)
+Neuroscience is the study of the structure and function of the nervous system, which includes the brain, spinal cord, and nerves.
 
-(loud laboratory noises)
+**Branches of Neuroscience:**
+
+* Behavioral Neuroscience: studies the relationship between the brain and behavior
+* Cognitive Neuroscience: studies the neural basis of cognition, including perception, attention, memory, and language
+* Clinical Neuroscience: studies the diagnosis and treatment of neurological and psychiatric disorders
+* Developmental Neuroscience: studies the development and maturation of the nervous system
+* Neuroanatomy: studies the structure and organization of the nervous system
+* Neurophysiology: studies the function and regulation of the nervous system
+
+**Applications of Neuroscience:**
+
+* Understanding neurological and psychiatric disorders, such as Alzheimer's disease, Parkinson's disease, and depression
+* Developing new treatments and therapies for these disorders
+* Improving cognitive function and memory
+* Enhancing brain-computer interfaces and neuroprosthetics
+* Understanding the neural basis of consciousness and intelligence
+
+I'm happy to answer any specific questions you may have related to neuroscience, based on the provided publication.
+
+Please feel free to ask your next question! 🧠
 
 
 ## Ask About Sign Language:
