@@ -41,7 +41,7 @@ modular-rag-assistant/
 │   ├── llm_service.py     # Manages communication with the Language Model API, including retrieval and response generation.
 │   ├── main.py            # Handles UTF-8, main logger, environment, main loop with prompt by similarity.
 │   └── prompts.py         # Loads environment, initialize LLM, builds prompt.
-├── data/                  # Directory for raw or processed data files.
+├── data/                  # Directory for AI research publications in markdown format.
 │   ├── football_analytics.md  # Data file for football analytics
 │   ├── neuro_persona.md       # Data file for neuro persona research
 │   └── sign_language_recognition.md # Data file for sign language recognition
