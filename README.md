@@ -13,7 +13,7 @@ The rise of domain-specific AI research requires intelligent assistants capable 
 
 # 2. Dataset
 
-Datasets stored in "data" directory are in markdown format containing AI research publications related to football, neuroscience and sign language:
+Datasets stored in the "data" directory are in markdown format containing AI research publications related to football, neuroscience and sign language:
 <br>football_analytics.md  - [(resource link)](https://app.readytensor.ai/publications/football-analytics-E10sJqzRdhuM)
 <br>neuro_persona.md       - [(resource link)](https://app.readytensor.ai/publications/neuropersona-A9Nex0aLF2Lp)
 <br>sign_language_recognition.md - [(resource link)](https://app.readytensor.ai/publications/american-sign-language-recognition-to-speech-system-for-medical-communication-w59iywWFcsst)
