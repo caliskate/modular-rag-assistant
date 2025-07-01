@@ -31,13 +31,13 @@ modular-rag-assistant/
 ├── .gitignore             # Specifies intentionally untracked files and directories that Git should ignore.
 ├── code/                  # Contains all Python source code for the application.
 │   ├── config/            # Configuration files for the application.
-│   │   ├── config.yaml          # Main application configuration, including high-level settings and reasoning strategies.
-│   │   └── prompt_config.yaml   # Specific configurations for prompt examples or reusable prompt components.
-│   ├── paths.py           # Defines important directory and file paths for the project.
-│   ├── utils.py           # Handles text splitting, embedding generation, and interactions with vector databases.
+│   │   ├── config.yaml          # Main application settings, including models and parameters.
+│   │   └── prompt_config.yaml   # Defines the various modular prompts.
+│   ├── paths.py           # Defines directory and file paths for the project.
+│   ├── utils.py           # Handles data, text chunking, embeddings and interactions with vector database.
 │   ├── llm_service.py     # Manages communication with the Language Model API, including retrieval and response generation.
-│   ├── main.py            # The primary script that orchestrates the entire RAG pipeline.
-│   └── prompts.py         # Defines the logic for constructing and formatting modular prompts.
+│   ├── main.py            # Handles UTF-8, main logger, environment, main loop with prompt by similarity.
+│   └── prompts.py         # Loads environment, initialize LLM, builds prompt.
 ├── data/                  # Directory for raw or processed data files.
 │   ├── football_analytics.md  # Data file for football analytics
 │   ├── neuro_persona.md       # Data file for neuro persona research
