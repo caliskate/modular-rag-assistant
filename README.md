@@ -26,7 +26,7 @@ The system employs SentenceTransformer embeddings to index and search markdown-b
 
 ```
 modular-rag-assistant/
-├── .env                   # Stores sensitive environment variables (e.g., API keys). Not committed to Git.
+├── .env                   # Stores sensitive environment variables (API keys). Not committed to Git.
 ├── .env.example           # Provides a template for the .env file, showing required variables. Committed to Git.
 ├── .gitignore             # Specifies intentionally untracked files and directories that Git should ignore.
 ├── code/                  # Contains all Python source code for the application.
@@ -48,7 +48,7 @@ modular-rag-assistant/
 ├── output/                # Main output folder for generated files and persistent data.
 │   └── vector_db/         # Subfolder to store the local vector database index and associated data.
 ├── requirements.txt       # Lists all Python package dependencies required to run the project.
-└── README.md              # Provides a general overview, setup instructions, and usage guidelines for the project.
+└── README.md              # Provides a general project report, setup instructions, and usage guidelines for the project.
 ```
 
 ## Installation
