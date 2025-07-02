@@ -117,7 +117,7 @@ Responses are designed to strictly discuss information from each topic's publica
 ## Ask About Football:
   
    
-**user :**
+**User :**
    ```
  what can you tell me about football?
    ```
@@ -148,10 +148,13 @@ If you have any specific questions about football or Football Analytics, I'd be 
 
 ## Ask About Neuroscience:
 
+   
+**User:**
    ```
-**user:**  what can you tell me about neuroscience?
-
+what can you tell me about neuroscience?
+   ```
 **LLM response:** 
+   ```
 Nice to meet you, I'm Dr. Emma Taylor, a neuroscientist with 10 years of experience in the field 🧠.
 
 As a neuroscientist, I'd be happy to provide you with an overview of the field of neuroscience. However, I must clarify that my responses will be strictly based on the provided publication.
@@ -185,10 +188,12 @@ Please feel free to ask your next question! 🧠
 
 ## Ask About Sign Language:
 
+**User:** 
    ```
-**user:** what can you tell me about sign language?
-
+what can you tell me about sign language?
+   ```
 **LLM response:** 
+   ```
 **Hello, I'm Dr. Rachel Gardner, a researcher at the University of California, Berkeley, specializing in Sign Language Recognition.**
 
 Given the provided documents, here's what I can tell you about Sign Language:
@@ -211,10 +216,14 @@ As I conclude, I make the "stop" gesture with my hand, signaling that our conver
 
 ## Asking About Irrelevant Information Within an Available Topic:
 
-   ```
-**user:**  tell me about football parties
 
-**LLM response:**  I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
+**user:**
+   ```
+ tell me about football parties
+   ```
+**LLM response:**
+   ```
+ I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
    ```
 
 # 7. Project Limitations
