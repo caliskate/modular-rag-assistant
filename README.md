@@ -248,6 +248,7 @@ This modular RAG assistant demonstrates how controlled, prompt-based architectur
 
 # 9. Contact
 Feel free to reach me via email (dverduzco@sandiego.edu) or Discord (d_verduzco)
+GitHub link: https://github.com/caliskate/modular-rag-assistant
 
 
 
