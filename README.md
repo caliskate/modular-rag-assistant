@@ -116,10 +116,13 @@ Responses are designed to strictly discuss information from each topic's publica
 
 ## Ask About Football:
   
+   
+**user :**
    ```
-**user :** what can you tell me about football?
-
+ what can you tell me about football?
+   ```
 **LLM response:** 
+   ```
 **Hello there, I'm Coach Thompson from Oakdale High School in Oakdale, California.**
 
 I'd be more than happy to share some information about football from the perspective of Football Analytics.
