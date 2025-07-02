@@ -18,8 +18,9 @@ Datasets stored in the "data" directory were converted manually to markdown form
 <br>A brief AI research publication that discusses football analysis using computer vision and machine learning. -  [(resource link)](https://app.readytensor.ai/publications/football-analytics-E10sJqzRdhuM)
 <br><br>**neuro_persona.md** - "NeuroPersona: Simulation of Dynamic Cognitive Perspectives"  by Ralf KruMmel, 2025.
 <br>A moderately sized AI research publication that discusses a simulation platform, "NeuroPersona," that can replicate human cognition and emotion. [(resource link)](https://app.readytensor.ai/publications/neuropersona-A9Nex0aLF2Lp)
-<br><br>**sign_language_recognition.md** - "American SIgn Language Recognition to Speech System for Medical Communication" by Haziqa Sajid and Asad Iqbal, 2024.
-<br>A detailed report with many code examples that uses computer vision and machine learning recognize the American Sign Language (ASL) alphabet. [(resource link)](https://app.readytensor.ai/publications/american-sign-language-recognition-to-speech-system-for-medical-communication-w59iywWFcsst)
+<br><br>**sign_language_recognition.md** - "American SIgn Language Recognition to Speech System for Medical Communication"
+<br>by Haziqa Sajid and Asad Iqbal, 2024.
+<br>A highly detailed report with many code examples that uses computer vision and machine learning to recognize the American Sign Language (ASL) alphabet. [(resource link)](https://app.readytensor.ai/publications/american-sign-language-recognition-to-speech-system-for-medical-communication-w59iywWFcsst)
 
 # 3. Methodology
 The system employs SentenceTransformer embeddings to index and search markdown-based research documents. A user query is embedded and compared with predefined topic categories to select a matching prompt template. Retrieved chunks split by format headers, based on the relevant documents are then passed, along with the query, into a structured prompt to the LLM. The pipeline leverages OpenAI embeddings for document encoding and LangChain's Groq integration for real-time generation.
