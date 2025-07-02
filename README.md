@@ -63,6 +63,8 @@ modular-rag-assistant/
 
 ## Installation
 
+> [!WARNING]
+> Prompt responses contain emojis in UTF-8 format. For the best viewing experience, make sure your terminal or display environment supports **UTF-8 encoding**. If not, emojis might appear as broken characters.
 
 1. **Clone the repository:**
 
@@ -100,7 +102,7 @@ Once the relevant document chunks are retrieved, they are integrated into a dyna
 
 - **`python code/main.py`**
 
-This launches the assistant in your terminal or command-line interface.
+This launches the assistant in your terminal or command-line interface. An interface that supports UTF-8 emojis is reccomended.
 You’ll be prompted to enter a question about football, neuroscience, or sign language AI research, or type config or exit.
 
 
