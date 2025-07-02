@@ -14,11 +14,11 @@ The rise of domain-specific AI research requires intelligent assistants capable 
 # 2. Dataset
 
 Datasets stored in the "data" directory were converted manually to markdown format containing AI research publications related to football, neuroscience and sign language:
-<br><br>football_analytics.md  - "Football Analytics" by Barnik Chakraborty, 2025.
+<br><br>**football_analytics.md** - "Football Analytics" by Barnik Chakraborty, 2025.
 <br>A brief AI research publication that discusses football analysis using computer vision and machine learning. -  [(resource link)](https://app.readytensor.ai/publications/football-analytics-E10sJqzRdhuM)
-<br>neuro_persona.md       - "NeuroPersona: Simulation of Dynamic Cognitive Perspectives"  by Ralf KruMmel, 2025.
+<br><br>**neuro_persona.md** - "NeuroPersona: Simulation of Dynamic Cognitive Perspectives"  by Ralf KruMmel, 2025.
 <br>A moderately sized AI research publication that discusses a simulation platform, "NeuroPersona," that can replicate human cognition and emotion. [(resource link)](https://app.readytensor.ai/publications/neuropersona-A9Nex0aLF2Lp)
-<br>sign_language_recognition.md - "American SIgn Language Recognition to Speech System for Medical Communication" by Haziqa Sajid and Asad Iqbal, 2024.
+<br><br>**sign_language_recognition.md** - "American SIgn Language Recognition to Speech System for Medical Communication" by Haziqa Sajid and Asad Iqbal, 2024.
 <br>A detailed report with many code examples that uses computer vision recognize the American Sign Language (ASL) alphabet. [(resource link)](https://app.readytensor.ai/publications/american-sign-language-recognition-to-speech-system-for-medical-communication-w59iywWFcsst)
 
 # 3. Methodology
