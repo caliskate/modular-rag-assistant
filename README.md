@@ -13,10 +13,13 @@ The rise of domain-specific AI research requires intelligent assistants capable 
 
 # 2. Dataset
 
-Datasets stored in the "data" directory are in markdown format containing AI research publications related to football, neuroscience and sign language:
-<br>football_analytics.md  - [(resource link)](https://app.readytensor.ai/publications/football-analytics-E10sJqzRdhuM)
-<br>neuro_persona.md       - [(resource link)](https://app.readytensor.ai/publications/neuropersona-A9Nex0aLF2Lp)
-<br>sign_language_recognition.md - [(resource link)](https://app.readytensor.ai/publications/american-sign-language-recognition-to-speech-system-for-medical-communication-w59iywWFcsst)
+Datasets stored in the "data" directory were converted manually to markdown format containing AI research publications related to football, neuroscience and sign language:
+<br>football_analytics.md  - "Football Analytics" by Barnik Chakraborty, 2025.
+<br>A brief AI research publication that discusses football analysis using computer vision and machine learning. -  [(resource link)](https://app.readytensor.ai/publications/football-analytics-E10sJqzRdhuM)
+<br>neuro_persona.md       - "NeuroPersona: Simulation of Dynamic Cognitive Perspectives"  by Ralf KruMmel, 2025.
+<br>A moderately sized AI research publication that discusses a simulation platform, "NeuroPersona," that can replicate human cognition and emotion. [(resource link)](https://app.readytensor.ai/publications/neuropersona-A9Nex0aLF2Lp)
+<br>sign_language_recognition.md - "American SIgn Language Recognition to Speech System for Medical Communication" by Haziqa Sajid and Asad Iqbal, 2024.
+<br>A detailed report with many code examples that uses computer vision recognize the American Sign Language (ASL) alphabet. [(resource link)](https://app.readytensor.ai/publications/american-sign-language-recognition-to-speech-system-for-medical-communication-w59iywWFcsst)
 
 # 3. Methodology
 The system employs SentenceTransformer embeddings to index and search markdown-based research documents. A user query is embedded and compared with predefined topic categories to select a matching prompt template. Retrieved chunks split by format headers, based on the relevant documents are then passed, along with the query, into a structured prompt to the LLM. The pipeline leverages OpenAI embeddings for document encoding and LangChain's Groq integration for real-time generation.
@@ -204,11 +207,13 @@ As I conclude, I make the "stop" gesture with my hand, signaling that our conver
 **user:**  tell me about football parties
 <br>**LLM response:**  I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
 
+# 7. Project Limitations
+The prompts for the chat assistants are intentionally limited to speaking about their related publications, but without a substantial variety in the publication data for each topic, the user engagement may only be short term when continously attempting to discuss information that is not listed in the publication data. A project like this may require more flexibility in what the chat assistant is able to discuss if the appropriate amount of publication data is not supplied for retrieval. The publications are also only limited to markdown format, so any publications must be converted to this format for the application. For any additional topics, a new prompt must also be created in order to have another personality to discuss a different AI research industry. It may also be worth having one dynamic prompt that can be automatically personalized to any topic that intoduced into the publication data, since most of the prompt guidelines are similar with only changes to the different personalities of each prompt based on the topic.
 
-# 7. Conclusion
+# 8. Conclusion
 This modular RAG assistant demonstrates how controlled, prompt-based architectures can guide general-purpose LLMs to deliver reliable, focused, and engaging outputs in specialized domains. With extensible design and safety constraints embedded in the prompting layer, it serves as a robust foundation for future research in domain-aware RAG chat assistants.
 
-# 8. Contact
+# 9. Contact
 Feel free to reach me via email (dverduzco@sandiego.edu) or Discord (d_verduzco)
 
 
