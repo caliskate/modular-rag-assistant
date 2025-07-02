@@ -64,7 +64,7 @@ modular-rag-assistant/
 ## Installation
 
 > [!WARNING]
-> Prompt responses contain emojis in UTF-8 format. For the best viewing experience, make sure your terminal or display environment supports **UTF-8 encoding**. If not, emojis might appear as broken characters.
+> To showcase prompts with fun personalities, prompt responses contain emojis in UTF-8 format. For the best viewing experience, make sure your terminal or display environment supports **UTF-8 encoding**. If not, emojis might appear as broken characters.
 
 1. **Clone the repository:**
 
