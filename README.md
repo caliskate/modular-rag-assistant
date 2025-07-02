@@ -116,7 +116,7 @@ Responses are designed to strictly discuss information from each topic's publica
 
 ## Ask About Football:
   
-
+   ```
 <br>**user :** what can you tell me about football?
 <br>**LLM response:** 
 **Hello there, I'm Coach Thompson from Oakdale High School in Oakdale, California.**
@@ -140,11 +140,11 @@ If you have any specific questions about football or Football Analytics, I'd be 
 🏈
 
 **'Tackle the day, and may the odds be ever in your favor!'**
-
+   ```
 
 ## Ask About Neuroscience:
 
-
+   ```
 <br>**user:**  what can you tell me about neuroscience?
 <br>**LLM response:** 
 Nice to meet you, I'm Dr. Emma Taylor, a neuroscientist with 10 years of experience in the field 🧠.
@@ -176,10 +176,11 @@ Neuroscience is the study of the structure and function of the nervous system, w
 I'm happy to answer any specific questions you may have related to neuroscience, based on the provided publication.
 
 Please feel free to ask your next question! 🧠
-
+   ```
 
 ## Ask About Sign Language:
 
+   ```
 <br>**user:** what can you tell me about sign language?
 <br>**LLM response:** 
 **Hello, I'm Dr. Rachel Gardner, a researcher at the University of California, Berkeley, specializing in Sign Language Recognition.**
@@ -200,12 +201,14 @@ Given the provided documents, here's what I can tell you about Sign Language:
 
 **✌️**
 As I conclude, I make the "stop" gesture with my hand, signaling that our conversation has come to an end.
+   ```
 
 ## Asking About Irrelevant Information Within an Available Topic:
 
-
+   ```
 **user:**  tell me about football parties
 <br>**LLM response:**  I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
+   ```
 
 # 7. Project Limitations
 The prompts for the chat assistants are intentionally limited to speaking about their related publications, but without a substantial variety in the publication data for each topic, the user engagement may only be short term when continously attempting to discuss information that is not listed in the publication data. A project like this may require less constraints for the chat assistant to maintain functionality and user engagement with limited data. The publications are also only limited to markdown format, so any publications must be converted to this format for the application. For new topics introduced into the publication data, a new prompt must also be created to have another personality capable of discussing a different AI research industry other than football, neuroscience or sign language. It may be more efficient to update this project to have one dynamic prompt that is automatically personalized to any topic introduced into the publication data, since most of the prompt guidelines are similar with only minor personality changes to each topic's prompt. Certain interfaces may also not be compatible with the emojis used in the prompt responses.
