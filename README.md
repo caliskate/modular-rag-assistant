@@ -14,7 +14,7 @@ The rise of domain-specific AI research requires intelligent assistants capable 
 # 2. Dataset
 
 Datasets stored in the "data" directory were converted manually to markdown format containing AI research publications related to football, neuroscience and sign language:
-<br>football_analytics.md  - "Football Analytics" by Barnik Chakraborty, 2025.
+<br><br>football_analytics.md  - "Football Analytics" by Barnik Chakraborty, 2025.
 <br>A brief AI research publication that discusses football analysis using computer vision and machine learning. -  [(resource link)](https://app.readytensor.ai/publications/football-analytics-E10sJqzRdhuM)
 <br>neuro_persona.md       - "NeuroPersona: Simulation of Dynamic Cognitive Perspectives"  by Ralf KruMmel, 2025.
 <br>A moderately sized AI research publication that discusses a simulation platform, "NeuroPersona," that can replicate human cognition and emotion. [(resource link)](https://app.readytensor.ai/publications/neuropersona-A9Nex0aLF2Lp)
