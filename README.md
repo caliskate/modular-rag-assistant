@@ -95,6 +95,10 @@ The assistant operates through a streamlined pipeline designed for efficient and
 Next, the system leverages this understanding to retrieve pertinent information. The user's query is used to perform a vector similarity search against a ChromaDB vector store, which houses pre-indexed chunks of research publications. These publications are split into chunks of text by a chunk_publication utility, which splits markdown content based on header levels (like #, ##, ###). This intelligent chunking ensures that each segment maintains contextual integrity by preserving the header within its associated content, making the retrieved information more coherent for the LLM. Furthermore, the chunking function includes logic to merge smaller chunks that fall below a min_chunk_size into preceding chunks, preventing the LLM from receiving fragmented or incomplete information.
 
 Once the relevant document chunks are retrieved, they are integrated into a dynamically constructed prompt. This is where modular prompt engineering, facilitated by the build_prompt_from_config function, comes into play. LangChain is employed to orchestrate this entire process, acting as a flexible framework that seamlessly connects the various components: from embedding generation and vector store interaction to prompt construction and LLM inference. Specifically, LangChain's capabilities are utilized for managing the conversational flow and simplifying the interaction with the Groq API. The retrieved document chunks, along with the user's original query and the selected domain-specific prompt template, form a comprehensive input for the LLM. Finally, the constructed prompt is sent to the Groq LLaMA model (llama-3.1-8b-instant), chosen for its real-time generation capabilities, to produce an accurate, contextualized, and stylistically aligned response, which is then delivered to the user.
+### Reponse Generation Flowchart:
+<p align="center">
+  <img src="README_images/response_generation.png" alt="Modular Prompt Photo" width="50%" />
+</p>
 
 ## Usage
 
