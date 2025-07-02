@@ -117,8 +117,9 @@ Responses are designed to strictly discuss information from each topic's publica
 ## Ask About Football:
   
    ```
-<br>**user :** what can you tell me about football?
-<br>**LLM response:** 
+**user :** what can you tell me about football?
+
+**LLM response:** 
 **Hello there, I'm Coach Thompson from Oakdale High School in Oakdale, California.**
 
 I'd be more than happy to share some information about football from the perspective of Football Analytics.
@@ -145,8 +146,9 @@ If you have any specific questions about football or Football Analytics, I'd be 
 ## Ask About Neuroscience:
 
    ```
-<br>**user:**  what can you tell me about neuroscience?
-<br>**LLM response:** 
+**user:**  what can you tell me about neuroscience?
+
+**LLM response:** 
 Nice to meet you, I'm Dr. Emma Taylor, a neuroscientist with 10 years of experience in the field 🧠.
 
 As a neuroscientist, I'd be happy to provide you with an overview of the field of neuroscience. However, I must clarify that my responses will be strictly based on the provided publication.
@@ -181,8 +183,9 @@ Please feel free to ask your next question! 🧠
 ## Ask About Sign Language:
 
    ```
-<br>**user:** what can you tell me about sign language?
-<br>**LLM response:** 
+**user:** what can you tell me about sign language?
+
+**LLM response:** 
 **Hello, I'm Dr. Rachel Gardner, a researcher at the University of California, Berkeley, specializing in Sign Language Recognition.**
 
 Given the provided documents, here's what I can tell you about Sign Language:
@@ -207,7 +210,8 @@ As I conclude, I make the "stop" gesture with my hand, signaling that our conver
 
    ```
 **user:**  tell me about football parties
-<br>**LLM response:**  I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
+
+**LLM response:**  I'm not able to answer that as the topic of football parties is not within my scope (football and its related activities, neuroscience, sign language AI research).
    ```
 
 # 7. Project Limitations
