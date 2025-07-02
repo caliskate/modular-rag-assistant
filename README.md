@@ -217,7 +217,7 @@ As I conclude, I make the "stop" gesture with my hand, signaling that our conver
 ## Asking About Irrelevant Information Within an Available Topic:
 
 
-**user:**
+**User:**
    ```
  tell me about football parties
    ```
