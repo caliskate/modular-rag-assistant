@@ -120,9 +120,9 @@ A fallback prompt will redirect the user to which topics can be discussed.
 Responses are designed to strictly discuss information from each topic's publication.
 
 
-# 6. Examples
+# 6. Usage Examples
 
-## Ask About Football:
+## Asking About Football:
   
    
 **User :**
@@ -154,7 +154,7 @@ If you have any specific questions about football or Football Analytics, I'd be 
 **'Tackle the day, and may the odds be ever in your favor!'**
    ```
 
-## Ask About Neuroscience:
+## Asking About Neuroscience:
 
    
 **User:**
@@ -194,7 +194,7 @@ I'm happy to answer any specific questions you may have related to neuroscience,
 Please feel free to ask your next question! 🧠
    ```
 
-## Ask About Sign Language:
+## Asking About Sign Language:
 
 **User:** 
    ```
